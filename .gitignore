@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.DS_Store
+.pytest_cache/
+.venv/
+venv/
+server/models/
+server/UIED/cnn/*.h5
+client/eval_*/
+client/results/
+temp*
+*_private.md
