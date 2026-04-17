@@ -1,0 +1,1861 @@
+{
+  "com.openai.chatgpt": {
+    "context": "tool",
+    "names": [
+      "ChatGPT"
+    ]
+  },
+  "com.tiktok.lite.go": {
+    "context": "content_feed",
+    "names": [
+      "TikTok Lite - Faster TikTok"
+    ]
+  },
+  "com.einnovation.temu": {
+    "context": "content_feed",
+    "names": [
+      "Temu: Shop Like a Billionaire"
+    ]
+  },
+  "com.zhiliaoapp.musically": {
+    "context": "content_feed",
+    "names": [
+      "TikTok - Videos, Shop & LIVE"
+    ]
+  },
+  "com.whatsapp": {
+    "context": "messaging",
+    "names": [
+      "WhatsApp Messenger"
+    ]
+  },
+  "com.moonactive.cmboard": {
+    "context": "game",
+    "names": [
+      "Coin Master - Board Adventure"
+    ]
+  },
+  "com.handmark.sportcaster": {
+    "context": "content_feed",
+    "names": [
+      "CBS Sports App: Scores & News"
+    ]
+  },
+  "com.instagram.android": {
+    "context": "content_feed",
+    "names": [
+      "Instagram"
+    ]
+  },
+  "com.zzkko": {
+    "context": "content_feed",
+    "names": [
+      "SHEIN-Shopping Online"
+    ]
+  },
+  "com.microsoft.copilot": {
+    "context": "tool",
+    "names": [
+      "​​Microsoft Copilot"
+    ]
+  },
+  "com.squareup.cash": {
+    "context": "financial",
+    "names": [
+      "Cash App"
+    ]
+  },
+  "com.whatnot_mobile": {
+    "context": "content_feed",
+    "names": [
+      "Whatnot: Shop, Sell, Connect"
+    ]
+  },
+  "com.lemon.lvoverseas": {
+    "context": "tool",
+    "names": [
+      "CapCut - Video Editor"
+    ]
+  },
+  "com.snapchat.android": {
+    "context": "messaging",
+    "names": [
+      "Snapchat"
+    ]
+  },
+  "com.alibaba.aliexpresshd": {
+    "context": "content_feed",
+    "names": [
+      "AliExpress - Shopping App"
+    ]
+  },
+  "com.ncaa.mmlive.app": {
+    "context": "content_feed",
+    "names": [
+      "NCAA March Madness Live"
+    ]
+  },
+  "com.block.juggle": {
+    "context": "game",
+    "names": [
+      "Block Blast!"
+    ]
+  },
+  "com.roblox.client": {
+    "context": "game",
+    "names": [
+      "Roblox"
+    ]
+  },
+  "com.facebook.katana": {
+    "context": "content_feed",
+    "names": [
+      "Facebook"
+    ]
+  },
+  "com.microsoft.office.word": {
+    "context": "tool",
+    "names": [
+      "Microsoft Word: Edit Documents"
+    ]
+  },
+  "com.vitastudio.mahjong": {
+    "context": "game",
+    "names": [
+      "Vita Mahjong"
+    ]
+  },
+  "easy.launcher": {
+    "context": "launcher",
+    "names": [
+      "Easy Homescreen"
+    ]
+  },
+  "com.shopify.arrive": {
+    "context": "content_feed",
+    "names": [
+      "Shop: All your favorite brands"
+    ]
+  },
+  "com.indeed.android.jobsearch": {
+    "context": "content_feed",
+    "names": [
+      "Indeed Job Search"
+    ]
+  },
+  "com.pdflauncher.forer.ciarip": {
+    "context": "tool",
+    "names": [
+      "PDF & Launcher for Android"
+    ]
+  },
+  "com.anthropic.claude": {
+    "context": "tool",
+    "names": [
+      "Claude by Anthropic"
+    ]
+  },
+  "com.superplaystudios.disneysolitairedreams": {
+    "context": "game",
+    "names": [
+      "Disney Solitaire"
+    ]
+  },
+  "org.telegram.messenger": {
+    "context": "messaging",
+    "names": [
+      "Telegram"
+    ]
+  },
+  "com.microsoft.teams": {
+    "context": "messaging",
+    "names": [
+      "Microsoft Teams"
+    ]
+  },
+  "com.hitappsgames.wordsolitaire": {
+    "context": "game",
+    "names": [
+      "Solitaire Associations Journey"
+    ]
+  },
+  "com.life360.android.safetymapd": {
+    "context": "content_feed",
+    "names": [
+      "Life360: Stay Connected & Safe"
+    ]
+  },
+  "com.disney.disneyplus": {
+    "context": "content_feed",
+    "names": [
+      "Disney+"
+    ]
+  },
+  "com.twitter.android": {
+    "context": "content_feed",
+    "names": [
+      "X"
+    ]
+  },
+  "com.freecash.app2": {
+    "context": "financial",
+    "names": [
+      "Freecash: Earn Money"
+    ]
+  },
+  "com.eet.weather.launcher": {
+    "context": "launcher",
+    "names": [
+      "Weather Now Launcher - Radar"
+    ]
+  },
+  "com.doordash.driverapp": {
+    "context": "tool",
+    "names": [
+      "DoorDash - Dasher"
+    ]
+  },
+  "ai.x.grok": {
+    "context": "tool",
+    "names": [
+      "Grok • Smartest AI Advisor"
+    ]
+  },
+  "com.tubitv": {
+    "context": "content_feed",
+    "names": [
+      "Tubi: Free Movies & Live TV"
+    ]
+  },
+  "com.facebook.orca": {
+    "context": "messaging",
+    "names": [
+      "Messenger"
+    ]
+  },
+  "com.dreamgames.royalkingdom": {
+    "context": "game",
+    "names": [
+      "Royal Kingdom"
+    ]
+  },
+  "com.netflix.mediaclient": {
+    "context": "content_feed",
+    "names": [
+      "Netflix"
+    ]
+  },
+  "com.paypal.android.p2pmobile": {
+    "context": "financial",
+    "names": [
+      "PayPal - Pay, Send, Save"
+    ]
+  },
+  "com.newleaf.app.android.victor": {
+    "context": "content_feed",
+    "names": [
+      "ReelShort - Stream Drama & TV"
+    ]
+  },
+  "co.reelway": {
+    "context": "content_feed",
+    "names": [
+      "Reelway: feel-good clips"
+    ]
+  },
+  "com.photoplus.recoverplus.photorecover": {
+    "context": "gallery",
+    "names": [
+      "Photo Recover Plus - Restore"
+    ]
+  },
+  "com.dd.doordash": {
+    "context": "content_feed",
+    "names": [
+      "DoorDash: Food, Grocery, More"
+    ]
+  },
+  "com.nebula.mahjongtile": {
+    "context": "game",
+    "names": [
+      "Mahjong Blast"
+    ]
+  },
+  "com.wbd.stream": {
+    "context": "content_feed",
+    "names": [
+      "HBO Max: Stream TV & Movies"
+    ]
+  },
+  "com.onedebit.chime": {
+    "context": "financial",
+    "names": [
+      "Chime – Mobile Banking"
+    ]
+  },
+  "com.cvs.launchers.cvs": {
+    "context": "health",
+    "names": [
+      "CVS Health"
+    ]
+  },
+  "com.pinterest": {
+    "context": "content_feed",
+    "names": [
+      "Pinterest"
+    ]
+  },
+  "com.discord": {
+    "context": "messaging",
+    "names": [
+      "Discord - Talk, Play, Hang Out"
+    ]
+  },
+  "tv.pluto.android": {
+    "context": "content_feed",
+    "names": [
+      "PlutoTV: Stream Free Movies/TV"
+    ]
+  },
+  "com.newsbreak.crimeradar": {
+    "context": "content_feed",
+    "names": [
+      "CrimeRadar: Dispatch Alerts"
+    ]
+  },
+  "com.find.phone.device.locate.lostphone.android": {
+    "context": "tool",
+    "names": [
+      "Find My Phone by Clap Launcher"
+    ]
+  },
+  "com.walmart.android": {
+    "context": "content_feed",
+    "names": [
+      "Walmart: Shopping & Savings"
+    ]
+  },
+  "com.peacocktv.peacockandroid": {
+    "context": "content_feed",
+    "names": [
+      "Peacock TV: Stream TV & Movies"
+    ]
+  },
+  "com.enflick.android.TextNow": {
+    "context": "messaging",
+    "names": [
+      "TextNow: Call + Text Unlimited"
+    ]
+  },
+  "com.venmo": {
+    "context": "financial",
+    "names": [
+      "Venmo"
+    ]
+  },
+  "com.ecffri.arrows": {
+    "context": "game",
+    "names": [
+      "Arrows – Puzzle Escape"
+    ]
+  },
+  "com.tencent.mm": {
+    "context": "messaging",
+    "names": [
+      "WeChat",
+      "微信"
+    ]
+  },
+  "com.ss.android.ugc.aweme": {
+    "context": "content_feed",
+    "names": [
+      "抖音"
+    ]
+  },
+  "com.smile.gifmaker": {
+    "context": "content_feed",
+    "names": [
+      "快手"
+    ]
+  },
+  "com.xunmeng.pinduoduo": {
+    "context": "content_feed",
+    "names": [
+      "拼多多"
+    ]
+  },
+  "com.ss.android.ugc.aweme.lite": {
+    "context": "content_feed",
+    "names": [
+      "抖音极速版"
+    ]
+  },
+  "com.kuaishou.nebula": {
+    "context": "content_feed",
+    "names": [
+      "快手极速版"
+    ]
+  },
+  "com.taobao.taobao": {
+    "context": "content_feed",
+    "names": [
+      "淘宝"
+    ]
+  },
+  "com.baidu.searchbox": {
+    "context": "public_content",
+    "names": [
+      "百度",
+      "Baidu"
+    ]
+  },
+  "com.sankuai.meituan": {
+    "context": "content_feed",
+    "names": [
+      "美团",
+      "Meituan"
+    ]
+  },
+  "com.larus.nova": {
+    "context": "tool",
+    "names": [
+      "豆包(上线专家模型)"
+    ]
+  },
+  "com.phoenix.read": {
+    "context": "content_feed",
+    "names": [
+      "红果免费短剧"
+    ]
+  },
+  "com.tencent.mobileqq": {
+    "context": "messaging",
+    "names": [
+      "QQ",
+      "腾讯QQ"
+    ]
+  },
+  "com.autonavi.minimap": {
+    "context": "map_view",
+    "names": [
+      "高德地图",
+      "AutoNavi Maps",
+      "Amap"
+    ]
+  },
+  "com.ss.android.article.news": {
+    "context": "content_feed",
+    "names": [
+      "今日头条"
+    ]
+  },
+  "com.dragon.read": {
+    "context": "content_feed",
+    "names": [
+      "番茄免费小说"
+    ]
+  },
+  "com.xingin.xhs": {
+    "context": "content_feed",
+    "names": [
+      "小红书"
+    ]
+  },
+  "com.jingdong.app.mall": {
+    "context": "content_feed",
+    "names": [
+      "京东"
+    ]
+  },
+  "com.ss.android.article.lite": {
+    "context": "content_feed",
+    "names": [
+      "今日头条极速版"
+    ]
+  },
+  "com.ss.android.article.video": {
+    "context": "content_feed",
+    "names": [
+      "西瓜视频"
+    ]
+  },
+  "com.xs.fm": {
+    "context": "content_feed",
+    "names": [
+      "番茄畅听"
+    ]
+  },
+  "tv.danmaku.bili": {
+    "context": "content_feed",
+    "names": [
+      "哔哩哔哩"
+    ]
+  },
+  "com.alibaba.android.rimet": {
+    "context": "messaging",
+    "names": [
+      "飞书",
+      "Lark",
+      "Feishu"
+    ]
+  },
+  "com.taobao.idlefish": {
+    "context": "content_feed",
+    "names": [
+      "闲鱼"
+    ]
+  },
+  "com.luna.music": {
+    "context": "content_feed",
+    "names": [
+      "汽水音乐"
+    ]
+  },
+  "com.tencent.mtt": {
+    "context": "public_content",
+    "names": [
+      "QQ浏览器",
+      "QQ Browser"
+    ]
+  },
+  "com.quark.browser": {
+    "context": "public_content",
+    "names": [
+      "夸克"
+    ]
+  },
+  "com.kugou.android": {
+    "context": "content_feed",
+    "names": [
+      "酷狗音乐"
+    ]
+  },
+  "com.tencent.qqlive": {
+    "context": "content_feed",
+    "names": [
+      "腾讯视频",
+      "Tencent Video"
+    ]
+  },
+  "com.tencent.news": {
+    "context": "content_feed",
+    "names": [
+      "腾讯新闻",
+      "Tencent News"
+    ]
+  },
+  "com.android.bankabc": {
+    "context": "financial",
+    "names": [
+      "中国农业银行"
+    ]
+  },
+  "com.ss.android.ugc.live": {
+    "context": "camera",
+    "names": [
+      "抖音火山版"
+    ]
+  },
+  "com.sina.weibo": {
+    "context": "content_feed",
+    "names": [
+      "微博",
+      "Weibo"
+    ]
+  },
+  "com.cat.readall": {
+    "context": "public_content",
+    "names": [
+      "悟空浏览器"
+    ]
+  },
+  "com.baidu.searchbox.lite": {
+    "context": "public_content",
+    "names": [
+      "百度极速版",
+      "Baidu Lite"
+    ]
+  },
+  "com.greenpoint.android.mc10086.activity": {
+    "context": "tool",
+    "names": [
+      "中国移动"
+    ]
+  },
+  "com.tencent.wework": {
+    "context": "messaging",
+    "names": [
+      "企业微信",
+      "WeCom",
+      "WeChat Work"
+    ]
+  },
+  "com.chinamworld.main": {
+    "context": "financial",
+    "names": [
+      "中国建设银行"
+    ]
+  },
+  "com.aliyun.tongyi": {
+    "context": "tool",
+    "names": [
+      "千问(阿里AI助手)"
+    ]
+  },
+  "com.tencent.qqmusic": {
+    "context": "content_feed",
+    "names": [
+      "QQ音乐",
+      "QQ Music"
+    ]
+  },
+  "com.baidu.homework": {
+    "context": "content_feed",
+    "names": [
+      "作业帮",
+      "Zuoyebang"
+    ]
+  },
+  "com.ss.android.ugc.livelite": {
+    "context": "content_feed",
+    "names": [
+      "抖音商城"
+    ]
+  },
+  "com.icbc": {
+    "context": "financial",
+    "names": [
+      "中国工商银行"
+    ]
+  },
+  "com.moji.mjweather": {
+    "context": "public_content",
+    "names": [
+      "墨迹天气"
+    ]
+  },
+  "com.dianping.v1": {
+    "context": "content_feed",
+    "names": [
+      "大众点评"
+    ]
+  },
+  "com.deepseek.chat": {
+    "context": "tool",
+    "names": [
+      "DeepSeek"
+    ]
+  },
+  "com.xs.fm.lite": {
+    "context": "content_feed",
+    "names": [
+      "番茄音乐（原畅听音乐）"
+    ]
+  },
+  "com.ximalaya.ting.android": {
+    "context": "content_feed",
+    "names": [
+      "喜马拉雅"
+    ]
+  },
+  "com.qiyi.video": {
+    "context": "content_feed",
+    "names": [
+      "爱奇艺"
+    ]
+  },
+  "com.snda.wifilocating": {
+    "context": "tool",
+    "names": [
+      "WiFi万能钥匙"
+    ]
+  },
+  "com.lemon.lv": {
+    "context": "camera",
+    "names": [
+      "剪映"
+    ]
+  },
+  "com.unionpay": {
+    "context": "financial",
+    "names": [
+      "云闪付"
+    ]
+  },
+  "com.ss.android.yumme.video": {
+    "context": "content_feed",
+    "names": [
+      "抖音精选"
+    ]
+  },
+  "com.videogo": {
+    "context": "content_feed",
+    "names": [
+      "萤石云视频"
+    ]
+  },
+  "com.kmxs.reader": {
+    "context": "content_feed",
+    "names": [
+      "七猫免费小说"
+    ]
+  },
+  "com.shizhuang.duapp": {
+    "context": "content_feed",
+    "names": [
+      "得物"
+    ]
+  },
+  "com.dz.hmjc": {
+    "context": "content_feed",
+    "names": [
+      "河马剧场"
+    ]
+  },
+  "com.cmri.universalapp": {
+    "context": "tool",
+    "names": [
+      "移动爱家"
+    ]
+  },
+  "com.chinamworld.bocmbci": {
+    "context": "financial",
+    "names": [
+      "中国银行"
+    ]
+  },
+  "com.baidu.netdisk": {
+    "context": "file",
+    "names": [
+      "百度网盘",
+      "Baidu Netdisk",
+      "百度云"
+    ]
+  },
+  "com.cainiao.wireless": {
+    "context": "content_feed",
+    "names": [
+      "菜鸟(一键查快递取快递寄快递)"
+    ]
+  },
+  "cn.wps.moffice_eng": {
+    "context": "tool",
+    "names": [
+      "WPS Office"
+    ]
+  },
+  "com.sdu.didi.psnger": {
+    "context": "map_view",
+    "names": [
+      "滴滴出行",
+      "DiDi"
+    ]
+  },
+  "com.kuaiduizuoye.scan": {
+    "context": "content_feed",
+    "names": [
+      "快对AI"
+    ]
+  },
+  "com.achievo.vipshop": {
+    "context": "content_feed",
+    "names": [
+      "唯品会"
+    ]
+  },
+  "com.yitong.mbank.psbc": {
+    "context": "financial",
+    "names": [
+      "邮储银行"
+    ]
+  },
+  "com.seetong.app.seetong": {
+    "context": "content_feed",
+    "names": [
+      "Seetong"
+    ]
+  },
+  "cmb.pb": {
+    "context": "financial",
+    "names": [
+      "招商银行"
+    ]
+  },
+  "com.youku.phone": {
+    "context": "content_feed",
+    "names": [
+      "优酷视频"
+    ]
+  },
+  "me.ele": {
+    "context": "content_feed",
+    "names": [
+      "淘宝闪购"
+    ]
+  },
+  "com.baidu.haokan": {
+    "context": "content_feed",
+    "names": [
+      "好看视频",
+      "Haokan Video"
+    ]
+  },
+  "com.alibaba.wireless": {
+    "context": "content_feed",
+    "names": [
+      "淘宝",
+      "Taobao"
+    ]
+  },
+  "com.taobao.live": {
+    "context": "content_feed",
+    "names": [
+      "点淘"
+    ]
+  },
+  "com.tencent.hunyuan.app.chat": {
+    "context": "tool",
+    "names": [
+      "腾讯元宝",
+      "Tencent Yuanbao"
+    ]
+  },
+  "com.yueme.itv": {
+    "context": "tool",
+    "names": [
+      "小翼管家"
+    ]
+  },
+  "com.xhey.xcamera": {
+    "context": "camera",
+    "names": [
+      "今日水印相机"
+    ]
+  },
+  "com.kwai.videoeditor": {
+    "context": "camera",
+    "names": [
+      "快影"
+    ]
+  },
+  "com.hpbr.bosszhipin": {
+    "context": "content_feed",
+    "names": [
+      "BOSS直聘"
+    ]
+  },
+  "ctrip.android.view": {
+    "context": "content_feed",
+    "names": [
+      "携程旅行"
+    ]
+  },
+  "com.sgcc.wsgw.cn": {
+    "context": "tool",
+    "names": [
+      "网上国网"
+    ]
+  },
+  "com.tmall.wireless": {
+    "context": "content_feed",
+    "names": [
+      "天猫"
+    ]
+  },
+  "com.sankuai.meituan.takeoutnew": {
+    "context": "content_feed",
+    "names": [
+      "美团外卖",
+      "Meituan Takeout"
+    ]
+  },
+  "com.byd.aeri.caranywhere": {
+    "context": "tool",
+    "names": [
+      "比亚迪"
+    ]
+  },
+  "com.fenbi.android.leo": {
+    "context": "content_feed",
+    "names": [
+      "小猿AI"
+    ]
+  },
+  "com.hexin.plat.android": {
+    "context": "financial",
+    "names": [
+      "同花顺(开户有礼)"
+    ]
+  },
+  "com.tencent.androidqqmail": {
+    "context": "messaging",
+    "names": [
+      "QQ邮箱",
+      "QQ Mail"
+    ]
+  },
+  "com.taobao.litetao": {
+    "context": "content_feed",
+    "names": [
+      "淘宝特价版"
+    ]
+  },
+  "com.immomo.momo": {
+    "context": "messaging",
+    "names": [
+      "MOMO陌陌"
+    ]
+  },
+  "com.tplink.ipc": {
+    "context": "tool",
+    "names": [
+      "TP-LINK物联"
+    ]
+  },
+  "com.mt.mtxx.mtxx": {
+    "context": "camera",
+    "names": [
+      "美图秀秀"
+    ]
+  },
+  "com.wuba": {
+    "context": "content_feed",
+    "names": [
+      "58同城"
+    ]
+  },
+  "com.sinovatech.unicom.ui": {
+    "context": "tool",
+    "names": [
+      "中国联通"
+    ]
+  },
+  "com.tencent.karaoke": {
+    "context": "content_feed",
+    "names": [
+      "全民K歌",
+      "WeSing"
+    ]
+  },
+  "com.ct.client": {
+    "context": "tool",
+    "names": [
+      "中国电信"
+    ]
+  },
+  "com.zhihu.android": {
+    "context": "content_feed",
+    "names": [
+      "知乎"
+    ]
+  },
+  "com.lu.ashionweather": {
+    "context": "public_content",
+    "names": [
+      "天气预报"
+    ]
+  },
+  "com.cctv.yangshipin.app.androidp": {
+    "context": "content_feed",
+    "names": [
+      "央视频"
+    ]
+  },
+  "com.jd.jrapp": {
+    "context": "financial",
+    "names": [
+      "京东金融"
+    ]
+  },
+  "com.UCMobile": {
+    "context": "public_content",
+    "names": [
+      "UC浏览器-随心搜·免费看"
+    ]
+  },
+  "com.tencent.wemeet.app": {
+    "context": "tool",
+    "names": [
+      "腾讯会议",
+      "VooV Meeting",
+      "Tencent Meeting"
+    ]
+  },
+  "com.duowan.kiwi": {
+    "context": "content_feed",
+    "names": [
+      "虎牙直播-热门游戏赛事直播"
+    ]
+  },
+  "com.xunlei.downloadprovider": {
+    "context": "tool",
+    "names": [
+      "迅雷"
+    ]
+  },
+  "com.fenbi.android.solar": {
+    "context": "content_feed",
+    "names": [
+      "小猿搜题-作业检查和辅导工具"
+    ]
+  },
+  "com.cmcc.cmvideo": {
+    "context": "content_feed",
+    "names": [
+      "咪咕视频-上咪咕看中超"
+    ]
+  },
+  "com.xt.retouch": {
+    "context": "camera",
+    "names": [
+      "醒图"
+    ]
+  },
+  "cn.soulapp.android": {
+    "context": "content_feed",
+    "names": [
+      "Soul"
+    ]
+  },
+  "com.netease.cloudmusic": {
+    "context": "content_feed",
+    "names": [
+      "网易云音乐",
+      "NetEase Cloud Music"
+    ]
+  },
+  "com.le123.ysdq": {
+    "context": "content_feed",
+    "names": [
+      "影视大全"
+    ]
+  },
+  "com.tencent.gamehelper.smoba": {
+    "context": "content_feed",
+    "names": [
+      "王者营地"
+    ]
+  },
+  "com.microsoft.emmx": {
+    "context": "public_content",
+    "names": [
+      "Edge-微软出品浏览器"
+    ]
+  },
+  "com.wuba.zhuanzhuan": {
+    "context": "content_feed",
+    "names": [
+      "转转"
+    ]
+  },
+  "com.umetrip.android.msky.app": {
+    "context": "content_feed",
+    "names": [
+      "航旅纵横-民航官方直销平台"
+    ]
+  },
+  "com.mmbox.xbrowser.pro": {
+    "context": "public_content",
+    "names": [
+      "X浏览器-支持油猴脚本"
+    ]
+  },
+  "com.qiyi.video.lite": {
+    "context": "content_feed",
+    "names": [
+      "爱奇艺极速版-《逐玉》首播"
+    ]
+  },
+  "com.baidu.tieba": {
+    "context": "content_feed",
+    "names": [
+      "百度贴吧",
+      "Tieba"
+    ]
+  },
+  "com.kwai.m2u": {
+    "context": "camera",
+    "names": [
+      "一甜相机"
+    ]
+  },
+  "com.digitalgd.dgyss": {
+    "context": "content_feed",
+    "names": [
+      "粤省事"
+    ]
+  },
+  "com.zuoyebang.knowledge": {
+    "context": "content_feed",
+    "names": [
+      "作业帮家长版-家长辅导作业神器"
+    ]
+  },
+  "com.qq.reader": {
+    "context": "public_content",
+    "names": [
+      "QQ阅读"
+    ]
+  },
+  "air.tv.douyu.android": {
+    "context": "content_feed",
+    "names": [
+      "斗鱼-娱乐游戏直播平台"
+    ]
+  },
+  "com.gotokeep.keep": {
+    "context": "health",
+    "names": [
+      "Keep- AI 运动教练"
+    ]
+  },
+  "com.pcncn.jj": {
+    "context": "content_feed",
+    "names": [
+      "作业精灵"
+    ]
+  },
+  "com.qidian.QDReader": {
+    "context": "public_content",
+    "names": [
+      "起点读书-看小说漫画读听书神器"
+    ]
+  },
+  "com.p1.mobile.putong": {
+    "context": "content_feed",
+    "names": [
+      "探探"
+    ]
+  },
+  "com.hunantv.imgo.activity": {
+    "context": "content_feed",
+    "names": [
+      "芒果TV"
+    ]
+  },
+  "com.baidu.BaiduMap": {
+    "context": "map_view",
+    "names": [
+      "百度地图",
+      "Baidu Maps"
+    ]
+  },
+  "com.zmzx.college.search": {
+    "context": "content_feed",
+    "names": [
+      "大学搜题酱-教材网课答案全收录"
+    ]
+  },
+  "com.gorgeous.lite": {
+    "context": "camera",
+    "names": [
+      "轻颜"
+    ]
+  },
+  "com.zybang.parent": {
+    "context": "content_feed",
+    "names": [
+      "作业帮口算-家长检查作业好帮手"
+    ]
+  },
+  "com.yek.android.kfc.activitys": {
+    "context": "content_feed",
+    "names": [
+      "肯德基-全新升级改版上线"
+    ]
+  },
+  "com.kuaikan.comic": {
+    "context": "content_feed",
+    "names": [
+      "快看漫画-快看，你的漫画乐园"
+    ]
+  },
+  "com.jd.jdlite": {
+    "context": "content_feed",
+    "names": [
+      "京东特价版"
+    ]
+  },
+  "com.njh.biubiu": {
+    "context": "tool",
+    "names": [
+      "biubiu加速器-畅玩全球"
+    ]
+  },
+  "com.intsig.camscanner": {
+    "context": "tool",
+    "names": [
+      "扫描全能王"
+    ]
+  },
+  "com.anjuke.android.app": {
+    "context": "content_feed",
+    "names": [
+      "安居客-二手房新房租房商铺"
+    ]
+  },
+  "cn.cntv": {
+    "context": "content_feed",
+    "names": [
+      "央视影音"
+    ]
+  },
+  "com.hupu.shihuo": {
+    "context": "content_feed",
+    "names": [
+      "识货"
+    ]
+  },
+  "com.jiongji.andriod.card": {
+    "context": "content_feed",
+    "names": [
+      "百词斩-学英语、背单词必备"
+    ]
+  },
+  "com.eduyun.app.factory.ykt": {
+    "context": "content_feed",
+    "names": [
+      "智慧中小学"
+    ]
+  },
+  "com.eg.android.AlipayGphone": {
+    "context": "financial",
+    "names": [
+      "支付宝-便捷生活一点就好"
+    ]
+  },
+  "com.iflytek.inputmethod": {
+    "context": "tool",
+    "names": [
+      "讯飞输入法"
+    ]
+  },
+  "com.sohu.inputmethod.sogou": {
+    "context": "tool",
+    "names": [
+      "搜狗输入法-语音手写文字识别"
+    ]
+  },
+  "com.chaoxing.mobile": {
+    "context": "content_feed",
+    "names": [
+      "学习通"
+    ]
+  },
+  "com.sup.android.superb": {
+    "context": "content_feed",
+    "names": [
+      "皮皮虾"
+    ]
+  },
+  "com.qq.ac.android": {
+    "context": "content_feed",
+    "names": [
+      "腾讯动漫-一人之下漫画独家连载"
+    ]
+  },
+  "com.shoujiduoduo.ringtone": {
+    "context": "tool",
+    "names": [
+      "铃声多多-免费铃声壁纸来电秀"
+    ]
+  },
+  "com.bilibili.comic": {
+    "context": "content_feed",
+    "names": [
+      "哔哩哔哩漫画",
+      "Bilibili Comics"
+    ]
+  },
+  "com.ss.android.auto": {
+    "context": "content_feed",
+    "names": [
+      "懂车帝"
+    ]
+  },
+  "com.sinyee.babybus.world": {
+    "context": "content_feed",
+    "names": [
+      "宝宝巴士世界-科学早教益智启蒙"
+    ]
+  },
+  "com.tencent.qqpim": {
+    "context": "tool",
+    "names": [
+      "腾讯手机管家",
+      "Tencent Mobile Manager"
+    ]
+  },
+  "com.MobileTicket": {
+    "context": "map_view",
+    "names": [
+      "铁路12306-中国铁路火车票官网"
+    ]
+  },
+  "com.sinyee.babybus.recommendapp": {
+    "context": "content_feed",
+    "names": [
+      "宝宝巴士-儿童快乐启蒙大全"
+    ]
+  },
+  "com.yiyou.ga": {
+    "context": "messaging",
+    "names": [
+      "TT语音-王者荣耀官方合作伙伴"
+    ]
+  },
+  "cn.kuwo.player": {
+    "context": "content_feed",
+    "names": [
+      "酷我音乐"
+    ]
+  },
+  "com.caishi.cronus": {
+    "context": "public_content",
+    "names": [
+      "唔哩头条"
+    ]
+  },
+  "com.tencent.map": {
+    "context": "map_view",
+    "names": [
+      "腾讯地图",
+      "Tencent Maps"
+    ]
+  },
+  "cn.xiaochuankeji.tieba": {
+    "context": "content_feed",
+    "names": [
+      "最右-搞笑脑洞兴趣社区"
+    ]
+  },
+  "com.duoduo.child.story": {
+    "context": "content_feed",
+    "names": [
+      "儿歌多多-早教启蒙故事动画片"
+    ]
+  },
+  "com.vivo.easyshare": {
+    "context": "tool",
+    "names": [
+      "互传"
+    ]
+  },
+  "com.meitu.meiyancamera": {
+    "context": "camera",
+    "names": [
+      "美颜相机-AI一句话出片"
+    ]
+  },
+  "com.skyplatanus.crucio": {
+    "context": "public_content",
+    "names": [
+      "快点阅读-对话小说"
+    ]
+  },
+  "com.jjwxc.reader": {
+    "context": "public_content",
+    "names": [
+      "晋江小说阅读"
+    ]
+  },
+  "com.lingan.seeyou": {
+    "context": "health",
+    "names": [
+      "美柚-经期备孕怀孕育儿亲友版"
+    ]
+  },
+  "com.kwai.thanos": {
+    "context": "content_feed",
+    "names": [
+      "噗叽"
+    ]
+  },
+  "com.tencent.transfer": {
+    "context": "messaging",
+    "names": [
+      "QQ邮箱",
+      "QQ Mail"
+    ]
+  },
+  "com.kwai.hisense": {
+    "context": "content_feed",
+    "names": [
+      "回森"
+    ]
+  },
+  "com.zidongdianji": {
+    "context": "tool",
+    "names": [
+      "自动点击器"
+    ]
+  },
+  "com.parallel.odyssey": {
+    "context": "messaging",
+    "names": [
+      "猫箱"
+    ]
+  },
+  "com.ziipin.softkeyboard": {
+    "context": "tool",
+    "names": [
+      "Badam维语输入法"
+    ]
+  },
+  "com.tencent.gamehelper.pg": {
+    "context": "content_feed",
+    "names": [
+      "和平营地"
+    ]
+  },
+  "com.kylin.read": {
+    "context": "content_feed",
+    "names": [
+      "红果免费漫剧"
+    ]
+  },
+  "net.huanci.hsjpro": {
+    "context": "gallery",
+    "names": [
+      "画世界Pro"
+    ]
+  },
+  "com.ucmobile.lite": {
+    "context": "public_content",
+    "names": [
+      "UC浏览器极速版（领现金）"
+    ]
+  },
+  "com.clover.daysmatter": {
+    "context": "tool",
+    "names": [
+      "倒数日"
+    ]
+  },
+  "com.excean.splay": {
+    "context": "tool",
+    "names": [
+      "OurPlay加速器"
+    ]
+  },
+  "com.dewmobile.kuaiya": {
+    "context": "tool",
+    "names": [
+      "快牙"
+    ]
+  },
+  "com.bytedance.dreamina": {
+    "context": "tool",
+    "names": [
+      "即梦AI"
+    ]
+  },
+  "com.aitutor.hippo": {
+    "context": "content_feed",
+    "names": [
+      "豆包爱学"
+    ]
+  },
+  "com.fvcorp.android.aijiasuclient": {
+    "context": "tool",
+    "names": [
+      "爱加速"
+    ]
+  },
+  "com.lofter.android": {
+    "context": "content_feed",
+    "names": [
+      "网易LOFTER"
+    ]
+  },
+  "com.kugou.android.lite": {
+    "context": "content_feed",
+    "names": [
+      "酷狗概念版"
+    ]
+  },
+  "com.antgroup.aijk.android": {
+    "context": "tool",
+    "names": [
+      "蚂蚁阿福"
+    ]
+  },
+  "com.ss.android.ugc.lifeservices": {
+    "context": "content_feed",
+    "names": [
+      "抖省省"
+    ]
+  },
+  "com.meitu.wink": {
+    "context": "camera",
+    "names": [
+      "Wink"
+    ]
+  },
+  "com.hortor.juliancysj": {
+    "context": "game",
+    "names": [
+      "创游世界"
+    ]
+  },
+  "mark.via": {
+    "context": "public_content",
+    "names": [
+      "Via"
+    ]
+  },
+  "com.endeavcensur.abort": {
+    "context": "map_view",
+    "names": [
+      "高精地图导航"
+    ]
+  },
+  "com.excean.dualaid": {
+    "context": "tool",
+    "names": [
+      "微双开分身"
+    ]
+  },
+  "com.sdu.didi.gsui": {
+    "context": "map_view",
+    "names": [
+      "滴滴出行",
+      "DiDi"
+    ]
+  },
+  "com.miga.world.c.oppo": {
+    "context": "game",
+    "names": [
+      "米加小镇世界"
+    ]
+  },
+  "com.cyclotron.in": {
+    "context": "content_feed",
+    "names": [
+      "点点穿书"
+    ]
+  },
+  "com.chif.weather": {
+    "context": "public_content",
+    "names": [
+      "准点天气"
+    ]
+  },
+  "com.able.wisdomtree": {
+    "context": "content_feed",
+    "names": [
+      "知到"
+    ]
+  },
+  "com.xiaomi.smarthome": {
+    "context": "tool",
+    "names": [
+      "米家",
+      "Xiaomi Smart Home",
+      "Mi Home"
+    ]
+  },
+  "com.android.camera2": {
+    "context": "camera",
+    "names": [
+      "Camera"
+    ],
+    "launcher_safe": true
+  },
+  "com.android.chrome": {
+    "context": "public_content",
+    "names": [
+      "Chrome"
+    ],
+    "launcher_safe": true
+  },
+  "com.android.contacts": {
+    "context": "contacts",
+    "names": [
+      "Contacts"
+    ],
+    "launcher_safe": true
+  },
+  "com.android.gallery3d": {
+    "context": "gallery",
+    "names": [
+      "Gallery"
+    ],
+    "launcher_safe": true
+  },
+  "com.android.launcher3": {
+    "context": "launcher",
+    "names": [
+      "Launcher"
+    ]
+  },
+  "com.android.settings": {
+    "context": "settings",
+    "names": [
+      "Settings"
+    ],
+    "launcher_safe": true
+  },
+  "com.asus.gallery": {
+    "context": "gallery",
+    "names": [
+      "ASUS Gallery"
+    ]
+  },
+  "com.coloros.gallery": {
+    "context": "gallery",
+    "names": [
+      "ColorOS Gallery"
+    ]
+  },
+  "com.coloros.settings": {
+    "context": "settings",
+    "names": [
+      "ColorOS Settings"
+    ]
+  },
+  "com.google.android.GoogleCamera": {
+    "context": "camera",
+    "names": [
+      "Google Camera"
+    ]
+  },
+  "com.google.android.apps.magazines": {
+    "context": "content_feed",
+    "names": [
+      "Google News"
+    ]
+  },
+  "com.google.android.apps.docs": {
+    "context": "file",
+    "names": [
+      "Google Drive",
+      "Drive"
+    ]
+  },
+  "com.google.android.apps.maps": {
+    "context": "map_view",
+    "names": [
+      "Google Maps"
+    ],
+    "launcher_safe": true
+  },
+  "com.google.android.apps.messaging": {
+    "context": "messaging",
+    "names": [
+      "Google Messages"
+    ]
+  },
+  "com.google.android.apps.nexuslauncher": {
+    "context": "launcher",
+    "names": [
+      "Pixel Launcher"
+    ]
+  },
+  "com.google.android.apps.photos": {
+    "context": "gallery",
+    "names": [
+      "Google Photos"
+    ],
+    "launcher_safe": true
+  },
+  "com.google.android.contacts": {
+    "context": "contacts",
+    "names": [
+      "Google Contacts",
+      "Contacts"
+    ],
+    "launcher_safe": true
+  },
+  "com.google.android.gm": {
+    "context": "messaging",
+    "names": [
+      "Gmail"
+    ]
+  },
+  "com.google.android.launcher": {
+    "context": "launcher",
+    "names": [
+      "Google Now Launcher"
+    ]
+  },
+  "com.google.android.youtube": {
+    "context": "public_content",
+    "names": [
+      "YouTube"
+    ],
+    "launcher_safe": true
+  },
+  "com.huawei.android.launcher": {
+    "context": "launcher",
+    "names": [
+      "华为桌面",
+      "Huawei Launcher"
+    ]
+  },
+  "com.huawei.camera": {
+    "context": "camera",
+    "names": [
+      "华为相机",
+      "Huawei Camera"
+    ]
+  },
+  "com.huawei.contacts": {
+    "context": "contacts",
+    "names": [
+      "华为联系人",
+      "Huawei Contacts"
+    ]
+  },
+  "com.huawei.photos": {
+    "context": "gallery",
+    "names": [
+      "Huawei Gallery"
+    ]
+  },
+  "com.miui.camera": {
+    "context": "camera",
+    "names": [
+      "MIUI Camera"
+    ]
+  },
+  "com.miui.contacts": {
+    "context": "contacts",
+    "names": [
+      "MIUI Contacts"
+    ]
+  },
+  "com.miui.gallery": {
+    "context": "gallery",
+    "names": [
+      "MIUI Gallery"
+    ]
+  },
+  "com.miui.home": {
+    "context": "launcher",
+    "names": [
+      "MIUI Launcher"
+    ]
+  },
+  "com.miui.settings": {
+    "context": "settings",
+    "names": [
+      "MIUI Settings"
+    ]
+  },
+  "com.motorola.camera2": {
+    "context": "camera",
+    "names": [
+      "Motorola Camera"
+    ]
+  },
+  "com.motorola.gallery3d": {
+    "context": "gallery",
+    "names": [
+      "Motorola Gallery"
+    ]
+  },
+  "com.motorola.launcher3": {
+    "context": "launcher",
+    "names": [
+      "Motorola Launcher"
+    ]
+  },
+  "com.oneplus.camera": {
+    "context": "camera",
+    "names": [
+      "OnePlus Camera"
+    ]
+  },
+  "com.oneplus.contacts": {
+    "context": "contacts",
+    "names": [
+      "OnePlus Contacts"
+    ]
+  },
+  "com.oneplus.gallery": {
+    "context": "gallery",
+    "names": [
+      "OnePlus Gallery"
+    ]
+  },
+  "com.oneplus.launcher": {
+    "context": "launcher",
+    "names": [
+      "OnePlus Launcher"
+    ]
+  },
+  "com.oppo.launcher": {
+    "context": "launcher",
+    "names": [
+      "OPPO Launcher"
+    ]
+  },
+  "com.samsung.android.contacts": {
+    "context": "contacts",
+    "names": [
+      "Samsung Contacts"
+    ]
+  },
+  "com.samsung.android.settings": {
+    "context": "settings",
+    "names": [
+      "Samsung Settings"
+    ]
+  },
+  "com.sec.android.app.camera": {
+    "context": "camera",
+    "names": [
+      "Samsung Camera"
+    ]
+  },
+  "com.sec.android.app.launcher": {
+    "context": "launcher",
+    "names": [
+      "Samsung Launcher"
+    ]
+  },
+  "com.sec.android.gallery3d": {
+    "context": "gallery",
+    "names": [
+      "Samsung Gallery"
+    ]
+  },
+  "com.vivo.gallery": {
+    "context": "gallery",
+    "names": [
+      "Vivo Gallery"
+    ]
+  },
+  "com.vivo.launcher": {
+    "context": "launcher",
+    "names": [
+      "Vivo Launcher"
+    ]
+  },
+  "com.vivo.settings": {
+    "context": "settings",
+    "names": [
+      "Vivo Settings"
+    ]
+  },
+  "com.android.mms": {
+    "context": "messaging",
+    "names": [
+      "Messages (SMS)"
+    ]
+  },
+  "com.android.messaging": {
+    "context": "messaging",
+    "names": [
+      "Android Messages"
+    ]
+  },
+  "com.google.android.documentsui": {
+    "context": "file",
+    "names": [
+      "Files"
+    ],
+    "launcher_safe": true
+  }
+}
