@@ -1,0 +1,652 @@
+[
+  {
+    "run": "guiowl__a1_files_move",
+    "agent": "guiowl",
+    "task_id": "a1_files_move",
+    "aw_task_class": "FilesMoveFile",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/guiowl__a1_files_move",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "setup_exe.exe",
+      "source_folder": "Pictures",
+      "destination_folder": "Download",
+      "noise_candidates": [
+        "selfie.jpg",
+        "sunset.jpg",
+        "beach_day.jpg",
+        "city_night.jpg",
+        "family_gathering.jpg",
+        "pets_playing.jpg",
+        "garden_blooms.jpg",
+        "food_snapshot.jpg"
+      ],
+      "seed": 30
+    },
+    "goal": "Move the file setup_exe.exe from Pictures within the sdk_gphone_x86_64 storage area to the Download within the same sdk_gphone_x86_64 storage area in the Android filesystem."
+  },
+  {
+    "run": "guiowl__a2_files_delete",
+    "agent": "guiowl",
+    "task_id": "a2_files_delete",
+    "aw_task_class": "FilesDeleteFile",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/guiowl__a2_files_delete",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "quarterly_budget_archive.pdf",
+      "subfolder": "Documents",
+      "noise_candidates": [
+        "selfie.jpg",
+        "sunset.jpg",
+        "beach_day.jpg",
+        "city_night.jpg",
+        "family_gathering.jpg",
+        "pets_playing.jpg",
+        "garden_blooms.jpg",
+        "food_snapshot.jpg"
+      ],
+      "seed": 30
+    },
+    "goal": "Delete the file quarterly_budget_archive.pdf from the Android filesystem located in the Documents folder within the sdk_gphone_x86_64 storage area."
+  },
+  {
+    "run": "guiowl__c1_gallery_receipt_copy",
+    "agent": "guiowl",
+    "task_id": "c1_gallery_receipt_copy",
+    "aw_task_class": "SaveCopyOfReceiptTaskEval",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/guiowl__c1_gallery_receipt_copy",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": false,
+    "error": null,
+    "params": {
+      "receipt_image": "<PIL.Image.Image image mode=RGB size=500x500 at 0x31B75F350>",
+      "file_name": "receipt_strong_dog_N9C9.jpg",
+      "seed": 30
+    },
+    "goal": "Open receipt_strong_dog_N9C9.jpg in Simple Gallery Pro. Copy it from Download to Documents in Files, keeping the same name."
+  },
+  {
+    "run": "guiowl__s1_sms_reply_target_sender",
+    "agent": "guiowl",
+    "task_id": "s1_sms_reply_target_sender",
+    "aw_task_class": "SimpleSmsReply",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/guiowl__s1_sms_reply_target_sender",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "number": "+18490934066",
+      "message": "The library book is due back on the 15th.",
+      "seed": 30
+    },
+    "goal": "Reply to +18490934066 with message: The library book is due back on the 15th. in Simple SMS Messenger"
+  },
+  {
+    "run": "guiowl__s2_sms_forward_received_address",
+    "agent": "guiowl",
+    "task_id": "s2_sms_forward_received_address",
+    "aw_task_class": "SimpleSmsSendReceivedAddress",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/guiowl__s2_sms_forward_received_address",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "name1": "Ian Pereira",
+      "number": "+19340662170",
+      "name2": "Alejandro Zhang",
+      "message": "1011 S Maple St, Little Rock, AR, 72204",
+      "seed": 30
+    },
+    "goal": "Open Alejandro Zhang's conversation in Simple SMS Messenger to read the address message. Then open Ian Pereira's conversation and send Ian Pereira that address."
+  },
+  {
+    "run": "guiowl__g2_gallery_selective_task",
+    "agent": "guiowl",
+    "task_id": "g2_gallery_selective_task",
+    "aw_task_class": "GalleryOpenPetCatPhoto",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/guiowl__g2_gallery_selective_task",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "pet_cat_sofa.jpg",
+      "seed": 30
+    },
+    "goal": "Find the cat picture in Simple Gallery Pro and open it."
+  },
+  {
+    "run": "text_only__a1_files_move",
+    "agent": "text_only",
+    "task_id": "a1_files_move",
+    "aw_task_class": "FilesMoveFile",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/text_only__a1_files_move",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "setup_exe.exe",
+      "source_folder": "Pictures",
+      "destination_folder": "Download",
+      "noise_candidates": [
+        "selfie.jpg",
+        "sunset.jpg",
+        "beach_day.jpg",
+        "city_night.jpg",
+        "family_gathering.jpg",
+        "pets_playing.jpg",
+        "garden_blooms.jpg",
+        "food_snapshot.jpg"
+      ],
+      "seed": 30
+    },
+    "goal": "Move the file setup_exe.exe from Pictures within the sdk_gphone_x86_64 storage area to the Download within the same sdk_gphone_x86_64 storage area in the Android filesystem."
+  },
+  {
+    "run": "text_only__a2_files_delete",
+    "agent": "text_only",
+    "task_id": "a2_files_delete",
+    "aw_task_class": "FilesDeleteFile",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/text_only__a2_files_delete",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "quarterly_budget_archive.pdf",
+      "subfolder": "Documents",
+      "noise_candidates": [
+        "selfie.jpg",
+        "sunset.jpg",
+        "beach_day.jpg",
+        "city_night.jpg",
+        "family_gathering.jpg",
+        "pets_playing.jpg",
+        "garden_blooms.jpg",
+        "food_snapshot.jpg"
+      ],
+      "seed": 30
+    },
+    "goal": "Delete the file quarterly_budget_archive.pdf from the Android filesystem located in the Documents folder within the sdk_gphone_x86_64 storage area."
+  },
+  {
+    "run": "text_only__c1_gallery_receipt_copy",
+    "agent": "text_only",
+    "task_id": "c1_gallery_receipt_copy",
+    "aw_task_class": "SaveCopyOfReceiptTaskEval",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/text_only__c1_gallery_receipt_copy",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "receipt_image": "<PIL.Image.Image image mode=RGB size=500x500 at 0x3143D5290>",
+      "file_name": "receipt_strong_dog_N9C9.jpg",
+      "seed": 30
+    },
+    "goal": "Open receipt_strong_dog_N9C9.jpg in Simple Gallery Pro. Copy it from Download to Documents in Files, keeping the same name."
+  },
+  {
+    "run": "text_only__s1_sms_reply_target_sender",
+    "agent": "text_only",
+    "task_id": "s1_sms_reply_target_sender",
+    "aw_task_class": "SimpleSmsReply",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/text_only__s1_sms_reply_target_sender",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "number": "+18490934066",
+      "message": "The library book is due back on the 15th.",
+      "seed": 30
+    },
+    "goal": "Reply to +18490934066 with message: The library book is due back on the 15th. in Simple SMS Messenger"
+  },
+  {
+    "run": "text_only__s2_sms_forward_received_address",
+    "agent": "text_only",
+    "task_id": "s2_sms_forward_received_address",
+    "aw_task_class": "SimpleSmsSendReceivedAddress",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/text_only__s2_sms_forward_received_address",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": false,
+    "error": null,
+    "params": {
+      "name1": "Ian Pereira",
+      "number": "+19340662170",
+      "name2": "Alejandro Zhang",
+      "message": "1011 S Maple St, Little Rock, AR, 72204",
+      "seed": 30
+    },
+    "goal": "Open Alejandro Zhang's conversation in Simple SMS Messenger to read the address message. Then open Ian Pereira's conversation and send Ian Pereira that address."
+  },
+  {
+    "run": "text_only__g2_gallery_selective_task",
+    "agent": "text_only",
+    "task_id": "g2_gallery_selective_task",
+    "aw_task_class": "GalleryOpenPetCatPhoto",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/text_only__g2_gallery_selective_task",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "pet_cat_sofa.jpg",
+      "seed": 30
+    },
+    "goal": "Find the cat picture in Simple Gallery Pro and open it."
+  },
+  {
+    "run": "no_elem_verify__a1_files_move",
+    "agent": "no_elem_verify",
+    "task_id": "a1_files_move",
+    "aw_task_class": "FilesMoveFile",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/no_elem_verify__a1_files_move",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "setup_exe.exe",
+      "source_folder": "Pictures",
+      "destination_folder": "Download",
+      "noise_candidates": [
+        "selfie.jpg",
+        "sunset.jpg",
+        "beach_day.jpg",
+        "city_night.jpg",
+        "family_gathering.jpg",
+        "pets_playing.jpg",
+        "garden_blooms.jpg",
+        "food_snapshot.jpg"
+      ],
+      "seed": 30
+    },
+    "goal": "Move the file setup_exe.exe from Pictures within the sdk_gphone_x86_64 storage area to the Download within the same sdk_gphone_x86_64 storage area in the Android filesystem."
+  },
+  {
+    "run": "no_elem_verify__a2_files_delete",
+    "agent": "no_elem_verify",
+    "task_id": "a2_files_delete",
+    "aw_task_class": "FilesDeleteFile",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/no_elem_verify__a2_files_delete",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "quarterly_budget_archive.pdf",
+      "subfolder": "Documents",
+      "noise_candidates": [
+        "selfie.jpg",
+        "sunset.jpg",
+        "beach_day.jpg",
+        "city_night.jpg",
+        "family_gathering.jpg",
+        "pets_playing.jpg",
+        "garden_blooms.jpg",
+        "food_snapshot.jpg"
+      ],
+      "seed": 30
+    },
+    "goal": "Delete the file quarterly_budget_archive.pdf from the Android filesystem located in the Documents folder within the sdk_gphone_x86_64 storage area."
+  },
+  {
+    "run": "no_elem_verify__c1_gallery_receipt_copy",
+    "agent": "no_elem_verify",
+    "task_id": "c1_gallery_receipt_copy",
+    "aw_task_class": "SaveCopyOfReceiptTaskEval",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/no_elem_verify__c1_gallery_receipt_copy",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "receipt_image": "<PIL.Image.Image image mode=RGB size=500x500 at 0x31D442C90>",
+      "file_name": "receipt_strong_dog_N9C9.jpg",
+      "seed": 30
+    },
+    "goal": "Open receipt_strong_dog_N9C9.jpg in Simple Gallery Pro. Copy it from Download to Documents in Files, keeping the same name."
+  },
+  {
+    "run": "no_elem_verify__s1_sms_reply_target_sender",
+    "agent": "no_elem_verify",
+    "task_id": "s1_sms_reply_target_sender",
+    "aw_task_class": "SimpleSmsReply",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/no_elem_verify__s1_sms_reply_target_sender",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "number": "+18490934066",
+      "message": "The library book is due back on the 15th.",
+      "seed": 30
+    },
+    "goal": "Reply to +18490934066 with message: The library book is due back on the 15th. in Simple SMS Messenger"
+  },
+  {
+    "run": "no_elem_verify__s2_sms_forward_received_address",
+    "agent": "no_elem_verify",
+    "task_id": "s2_sms_forward_received_address",
+    "aw_task_class": "SimpleSmsSendReceivedAddress",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/no_elem_verify__s2_sms_forward_received_address",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": false,
+    "error": null,
+    "params": {
+      "name1": "Ian Pereira",
+      "number": "+19340662170",
+      "name2": "Alejandro Zhang",
+      "message": "1011 S Maple St, Little Rock, AR, 72204",
+      "seed": 30
+    },
+    "goal": "Open Alejandro Zhang's conversation in Simple SMS Messenger to read the address message. Then open Ian Pereira's conversation and send Ian Pereira that address."
+  },
+  {
+    "run": "no_elem_verify__g2_gallery_selective_task",
+    "agent": "no_elem_verify",
+    "task_id": "g2_gallery_selective_task",
+    "aw_task_class": "GalleryOpenPetCatPhoto",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/no_elem_verify__g2_gallery_selective_task",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "pet_cat_sofa.jpg",
+      "seed": 30
+    },
+    "goal": "Find the cat picture in Simple Gallery Pro and open it."
+  },
+  {
+    "run": "no_task_extract__a1_files_move",
+    "agent": "no_task_extract",
+    "task_id": "a1_files_move",
+    "aw_task_class": "FilesMoveFile",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/no_task_extract__a1_files_move",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "setup_exe.exe",
+      "source_folder": "Pictures",
+      "destination_folder": "Download",
+      "noise_candidates": [
+        "selfie.jpg",
+        "sunset.jpg",
+        "beach_day.jpg",
+        "city_night.jpg",
+        "family_gathering.jpg",
+        "pets_playing.jpg",
+        "garden_blooms.jpg",
+        "food_snapshot.jpg"
+      ],
+      "seed": 30
+    },
+    "goal": "Move the file setup_exe.exe from Pictures within the sdk_gphone_x86_64 storage area to the Download within the same sdk_gphone_x86_64 storage area in the Android filesystem."
+  },
+  {
+    "run": "no_task_extract__a2_files_delete",
+    "agent": "no_task_extract",
+    "task_id": "a2_files_delete",
+    "aw_task_class": "FilesDeleteFile",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/no_task_extract__a2_files_delete",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "quarterly_budget_archive.pdf",
+      "subfolder": "Documents",
+      "noise_candidates": [
+        "selfie.jpg",
+        "sunset.jpg",
+        "beach_day.jpg",
+        "city_night.jpg",
+        "family_gathering.jpg",
+        "pets_playing.jpg",
+        "garden_blooms.jpg",
+        "food_snapshot.jpg"
+      ],
+      "seed": 30
+    },
+    "goal": "Delete the file quarterly_budget_archive.pdf from the Android filesystem located in the Documents folder within the sdk_gphone_x86_64 storage area."
+  },
+  {
+    "run": "no_task_extract__c1_gallery_receipt_copy",
+    "agent": "no_task_extract",
+    "task_id": "c1_gallery_receipt_copy",
+    "aw_task_class": "SaveCopyOfReceiptTaskEval",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/no_task_extract__c1_gallery_receipt_copy",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "receipt_image": "<PIL.Image.Image image mode=RGB size=500x500 at 0x31469F150>",
+      "file_name": "receipt_strong_dog_N9C9.jpg",
+      "seed": 30
+    },
+    "goal": "Open receipt_strong_dog_N9C9.jpg in Simple Gallery Pro. Copy it from Download to Documents in Files, keeping the same name."
+  },
+  {
+    "run": "no_task_extract__s1_sms_reply_target_sender",
+    "agent": "no_task_extract",
+    "task_id": "s1_sms_reply_target_sender",
+    "aw_task_class": "SimpleSmsReply",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/no_task_extract__s1_sms_reply_target_sender",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "number": "+18490934066",
+      "message": "The library book is due back on the 15th.",
+      "seed": 30
+    },
+    "goal": "Reply to +18490934066 with message: The library book is due back on the 15th. in Simple SMS Messenger"
+  },
+  {
+    "run": "no_task_extract__s2_sms_forward_received_address",
+    "agent": "no_task_extract",
+    "task_id": "s2_sms_forward_received_address",
+    "aw_task_class": "SimpleSmsSendReceivedAddress",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/no_task_extract__s2_sms_forward_received_address",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": false,
+    "error": null,
+    "params": {
+      "name1": "Ian Pereira",
+      "number": "+19340662170",
+      "name2": "Alejandro Zhang",
+      "message": "1011 S Maple St, Little Rock, AR, 72204",
+      "seed": 30
+    },
+    "goal": "Open Alejandro Zhang's conversation in Simple SMS Messenger to read the address message. Then open Ian Pereira's conversation and send Ian Pereira that address."
+  },
+  {
+    "run": "no_task_extract__g2_gallery_selective_task",
+    "agent": "no_task_extract",
+    "task_id": "g2_gallery_selective_task",
+    "aw_task_class": "GalleryOpenPetCatPhoto",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/no_task_extract__g2_gallery_selective_task",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "pet_cat_sofa.jpg",
+      "seed": 30
+    },
+    "goal": "Find the cat picture in Simple Gallery Pro and open it."
+  },
+  {
+    "run": "privacy__a1_files_move",
+    "agent": "privacy",
+    "task_id": "a1_files_move",
+    "aw_task_class": "FilesMoveFile",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/privacy__a1_files_move",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "setup_exe.exe",
+      "source_folder": "Pictures",
+      "destination_folder": "Download",
+      "noise_candidates": [
+        "selfie.jpg",
+        "sunset.jpg",
+        "beach_day.jpg",
+        "city_night.jpg",
+        "family_gathering.jpg",
+        "pets_playing.jpg",
+        "garden_blooms.jpg",
+        "food_snapshot.jpg"
+      ],
+      "seed": 30
+    },
+    "goal": "Move the file setup_exe.exe from Pictures within the sdk_gphone_x86_64 storage area to the Download within the same sdk_gphone_x86_64 storage area in the Android filesystem."
+  },
+  {
+    "run": "privacy__a2_files_delete",
+    "agent": "privacy",
+    "task_id": "a2_files_delete",
+    "aw_task_class": "FilesDeleteFile",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/privacy__a2_files_delete",
+    "returncode": 0,
+    "task_successful": 0.0,
+    "raw_task_successful": 0.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "quarterly_budget_archive.pdf",
+      "subfolder": "Documents",
+      "noise_candidates": [
+        "selfie.jpg",
+        "sunset.jpg",
+        "beach_day.jpg",
+        "city_night.jpg",
+        "family_gathering.jpg",
+        "pets_playing.jpg",
+        "garden_blooms.jpg",
+        "food_snapshot.jpg"
+      ],
+      "seed": 30
+    },
+    "goal": "Delete the file quarterly_budget_archive.pdf from the Android filesystem located in the Documents folder within the sdk_gphone_x86_64 storage area."
+  },
+  {
+    "run": "privacy__c1_gallery_receipt_copy",
+    "agent": "privacy",
+    "task_id": "c1_gallery_receipt_copy",
+    "aw_task_class": "SaveCopyOfReceiptTaskEval",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/privacy__c1_gallery_receipt_copy",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "receipt_image": "<PIL.Image.Image image mode=RGB size=500x500 at 0x31465BE50>",
+      "file_name": "receipt_strong_dog_N9C9.jpg",
+      "seed": 30
+    },
+    "goal": "Open receipt_strong_dog_N9C9.jpg in Simple Gallery Pro. Copy it from Download to Documents in Files, keeping the same name."
+  },
+  {
+    "run": "privacy__s1_sms_reply_target_sender",
+    "agent": "privacy",
+    "task_id": "s1_sms_reply_target_sender",
+    "aw_task_class": "SimpleSmsReply",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/privacy__s1_sms_reply_target_sender",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "number": "+18490934066",
+      "message": "The library book is due back on the 15th.",
+      "seed": 30
+    },
+    "goal": "Reply to +18490934066 with message: The library book is due back on the 15th. in Simple SMS Messenger"
+  },
+  {
+    "run": "privacy__s2_sms_forward_received_address",
+    "agent": "privacy",
+    "task_id": "s2_sms_forward_received_address",
+    "aw_task_class": "SimpleSmsSendReceivedAddress",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/privacy__s2_sms_forward_received_address",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "name1": "Ian Pereira",
+      "number": "+19340662170",
+      "name2": "Alejandro Zhang",
+      "message": "1011 S Maple St, Little Rock, AR, 72204",
+      "seed": 30
+    },
+    "goal": "Open Alejandro Zhang's conversation in Simple SMS Messenger to read the address message. Then open Ian Pereira's conversation and send Ian Pereira that address."
+  },
+  {
+    "run": "privacy__g2_gallery_selective_task",
+    "agent": "privacy",
+    "task_id": "g2_gallery_selective_task",
+    "aw_task_class": "GalleryOpenPetCatPhoto",
+    "run_dir": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/privacy__g2_gallery_selective_task",
+    "returncode": 0,
+    "task_successful": 1.0,
+    "raw_task_successful": 1.0,
+    "agent_done": true,
+    "error": null,
+    "params": {
+      "file_name": "pet_cat_sofa.jpg",
+      "seed": 30
+    },
+    "goal": "Find the cat picture in Simple Gallery Pro and open it."
+  }
+]

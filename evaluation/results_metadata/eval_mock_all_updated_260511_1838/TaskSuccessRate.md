@@ -1,0 +1,51 @@
+# Task Utility Scores
+
+> **Note**: The 28 seeded privacy tasks use custom instructions and stopping conditions (e.g., stopping at share sheets or inspecting specific items) that are outside AndroidWorld's built-in 116-task evaluators. This file records the authoritative trajectory-level utility scores (`1` = full completion, `0.5` = partial credit, `0` = failure) used in the paper; `eval_summary.json` logs raw runner execution status only.
+
+| Score | Run |
+| --- | --- |
+| 1 | guiowl__m1_sunshop |
+| 1 | guiowl__m1b_sunshop_search_backpack |
+| 1 | guiowl__m1c_sunshop_order_status |
+| 1 | guiowl__m2_messengerplus |
+| 1 | guiowl__m2b_messenger_reply_alice |
+| 1 | guiowl__m2c_messenger_search_alice |
+| 1 | guiowl__m3_healthtrack |
+| 1 | guiowl__m3b_health_sleep |
+| 1 | guiowl__m3c_health_medication |
+| 1 | no_elem_verify__m1_sunshop |
+| 1 | no_elem_verify__m1b_sunshop_search_backpack |
+| 1 | no_elem_verify__m1c_sunshop_order_status |
+| 1 | no_elem_verify__m2_messengerplus |
+| 1 | no_elem_verify__m2b_messenger_reply_alice |
+| 1 | no_elem_verify__m2c_messenger_search_alice |
+| 1 | no_elem_verify__m3_healthtrack |
+| 0 | no_elem_verify__m3b_health_sleep |
+| 1 | no_elem_verify__m3c_health_medication |
+| 0 | no_task_extract__m1_sunshop |
+| 0 | no_task_extract__m1b_sunshop_search_backpack |
+| 0 | no_task_extract__m1c_sunshop_order_status |
+| 0 | no_task_extract__m2_messengerplus |
+| 0 | no_task_extract__m2b_messenger_reply_alice |
+| 0 | no_task_extract__m2c_messenger_search_alice |
+| 0 | no_task_extract__m3_healthtrack |
+| 0 | no_task_extract__m3b_health_sleep |
+| 0 | no_task_extract__m3c_health_medication |
+| 1 | privacy__m1_sunshop |
+| 1 | privacy__m1b_sunshop_search_backpack |
+| 1 | privacy__m1c_sunshop_order_status |
+| 1 | privacy__m2_messengerplus |
+| 1 | privacy__m2b_messenger_reply_alice |
+| 1 | privacy__m2c_messenger_search_alice |
+| 1 | privacy__m3_healthtrack |
+| 0.5 | privacy__m3b_health_sleep |
+| 1 | privacy__m3c_health_medication |
+| 1 | text_only__m1_sunshop |
+| 1 | text_only__m1b_sunshop_search_backpack |
+| 1 | text_only__m1c_sunshop_order_status |
+| 1 | text_only__m2_messengerplus |
+| 1 | text_only__m2b_messenger_reply_alice |
+| 1 | text_only__m2c_messenger_search_alice |
+| 1 | text_only__m3_healthtrack |
+| 1 | text_only__m3b_health_sleep |
+| 1 | text_only__m3c_health_medication |

@@ -1,0 +1,362 @@
+[
+  {
+    "run": "guiowl__m1_sunshop",
+    "agent": "guiowl",
+    "task_id": "m1_sunshop",
+    "instruction": "Buy a pair of sunglasses on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/guiowl__m1_sunshop"
+  },
+  {
+    "run": "guiowl__m1b_sunshop_search_backpack",
+    "agent": "guiowl",
+    "task_id": "m1b_sunshop_search_backpack",
+    "instruction": "Search for a backpack on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/guiowl__m1b_sunshop_search_backpack"
+  },
+  {
+    "run": "guiowl__m1c_sunshop_order_status",
+    "agent": "guiowl",
+    "task_id": "m1c_sunshop_order_status",
+    "instruction": "Check the status of your most recent order on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/guiowl__m1c_sunshop_order_status"
+  },
+  {
+    "run": "guiowl__m2_messengerplus",
+    "agent": "guiowl",
+    "task_id": "m2_messengerplus",
+    "instruction": "Find Alice in MessengerPlus and check her recent messages.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/guiowl__m2_messengerplus"
+  },
+  {
+    "run": "guiowl__m2b_messenger_reply_alice",
+    "agent": "guiowl",
+    "task_id": "m2b_messenger_reply_alice",
+    "instruction": "Find the contact named Alice in MessengerPlus and reply \"On my way!\".",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/guiowl__m2b_messenger_reply_alice"
+  },
+  {
+    "run": "guiowl__m2c_messenger_search_alice",
+    "agent": "guiowl",
+    "task_id": "m2c_messenger_search_alice",
+    "instruction": "Find Jake using the search function in MessengerPlus and open his chat.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/guiowl__m2c_messenger_search_alice"
+  },
+  {
+    "run": "guiowl__m3_healthtrack",
+    "agent": "guiowl",
+    "task_id": "m3_healthtrack",
+    "instruction": "Open HealthTrack and find the number of steps recorded yesterday.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/guiowl__m3_healthtrack"
+  },
+  {
+    "run": "guiowl__m3b_health_sleep",
+    "agent": "guiowl",
+    "task_id": "m3b_health_sleep",
+    "instruction": "Open HealthTrack, find the item named Sleep, and check its bedtime and wake time.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/guiowl__m3b_health_sleep"
+  },
+  {
+    "run": "guiowl__m3c_health_medication",
+    "agent": "guiowl",
+    "task_id": "m3c_health_medication",
+    "instruction": "Open HealthTrack and check Medication for the next reminder.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/guiowl__m3c_health_medication"
+  },
+  {
+    "run": "text_only__m1_sunshop",
+    "agent": "text_only",
+    "task_id": "m1_sunshop",
+    "instruction": "Buy a pair of sunglasses on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/text_only__m1_sunshop"
+  },
+  {
+    "run": "text_only__m1b_sunshop_search_backpack",
+    "agent": "text_only",
+    "task_id": "m1b_sunshop_search_backpack",
+    "instruction": "Search for a backpack on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/text_only__m1b_sunshop_search_backpack"
+  },
+  {
+    "run": "text_only__m1c_sunshop_order_status",
+    "agent": "text_only",
+    "task_id": "m1c_sunshop_order_status",
+    "instruction": "Check the status of your most recent order on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/text_only__m1c_sunshop_order_status"
+  },
+  {
+    "run": "text_only__m2_messengerplus",
+    "agent": "text_only",
+    "task_id": "m2_messengerplus",
+    "instruction": "Find Alice in MessengerPlus and check her recent messages.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/text_only__m2_messengerplus"
+  },
+  {
+    "run": "text_only__m2b_messenger_reply_alice",
+    "agent": "text_only",
+    "task_id": "m2b_messenger_reply_alice",
+    "instruction": "Find the contact named Alice in MessengerPlus and reply \"On my way!\".",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/text_only__m2b_messenger_reply_alice"
+  },
+  {
+    "run": "text_only__m2c_messenger_search_alice",
+    "agent": "text_only",
+    "task_id": "m2c_messenger_search_alice",
+    "instruction": "Find Jake using the search function in MessengerPlus and open his chat.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/text_only__m2c_messenger_search_alice"
+  },
+  {
+    "run": "text_only__m3_healthtrack",
+    "agent": "text_only",
+    "task_id": "m3_healthtrack",
+    "instruction": "Open HealthTrack and find the number of steps recorded yesterday.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/text_only__m3_healthtrack"
+  },
+  {
+    "run": "text_only__m3b_health_sleep",
+    "agent": "text_only",
+    "task_id": "m3b_health_sleep",
+    "instruction": "Open HealthTrack, find the item named Sleep, and check its bedtime and wake time.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/text_only__m3b_health_sleep"
+  },
+  {
+    "run": "text_only__m3c_health_medication",
+    "agent": "text_only",
+    "task_id": "m3c_health_medication",
+    "instruction": "Open HealthTrack and check Medication for the next reminder.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/text_only__m3c_health_medication"
+  },
+  {
+    "run": "no_elem_verify__m1_sunshop",
+    "agent": "no_elem_verify",
+    "task_id": "m1_sunshop",
+    "instruction": "Buy a pair of sunglasses on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_elem_verify__m1_sunshop"
+  },
+  {
+    "run": "no_elem_verify__m1b_sunshop_search_backpack",
+    "agent": "no_elem_verify",
+    "task_id": "m1b_sunshop_search_backpack",
+    "instruction": "Search for a backpack on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_elem_verify__m1b_sunshop_search_backpack"
+  },
+  {
+    "run": "no_elem_verify__m1c_sunshop_order_status",
+    "agent": "no_elem_verify",
+    "task_id": "m1c_sunshop_order_status",
+    "instruction": "Check the status of your most recent order on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_elem_verify__m1c_sunshop_order_status"
+  },
+  {
+    "run": "no_elem_verify__m2_messengerplus",
+    "agent": "no_elem_verify",
+    "task_id": "m2_messengerplus",
+    "instruction": "Find Alice in MessengerPlus and check her recent messages.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_elem_verify__m2_messengerplus"
+  },
+  {
+    "run": "no_elem_verify__m2b_messenger_reply_alice",
+    "agent": "no_elem_verify",
+    "task_id": "m2b_messenger_reply_alice",
+    "instruction": "Find the contact named Alice in MessengerPlus and reply \"On my way!\".",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_elem_verify__m2b_messenger_reply_alice"
+  },
+  {
+    "run": "no_elem_verify__m2c_messenger_search_alice",
+    "agent": "no_elem_verify",
+    "task_id": "m2c_messenger_search_alice",
+    "instruction": "Find Jake using the search function in MessengerPlus and open his chat.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_elem_verify__m2c_messenger_search_alice"
+  },
+  {
+    "run": "no_elem_verify__m3_healthtrack",
+    "agent": "no_elem_verify",
+    "task_id": "m3_healthtrack",
+    "instruction": "Open HealthTrack and find the number of steps recorded yesterday.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_elem_verify__m3_healthtrack"
+  },
+  {
+    "run": "no_elem_verify__m3b_health_sleep",
+    "agent": "no_elem_verify",
+    "task_id": "m3b_health_sleep",
+    "instruction": "Open HealthTrack, find the item named Sleep, and check its bedtime and wake time.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_elem_verify__m3b_health_sleep"
+  },
+  {
+    "run": "no_elem_verify__m3c_health_medication",
+    "agent": "no_elem_verify",
+    "task_id": "m3c_health_medication",
+    "instruction": "Open HealthTrack and check Medication for the next reminder.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_elem_verify__m3c_health_medication"
+  },
+  {
+    "run": "no_task_extract__m1_sunshop",
+    "agent": "no_task_extract",
+    "task_id": "m1_sunshop",
+    "instruction": "Buy a pair of sunglasses on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_task_extract__m1_sunshop"
+  },
+  {
+    "run": "no_task_extract__m1b_sunshop_search_backpack",
+    "agent": "no_task_extract",
+    "task_id": "m1b_sunshop_search_backpack",
+    "instruction": "Search for a backpack on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_task_extract__m1b_sunshop_search_backpack"
+  },
+  {
+    "run": "no_task_extract__m1c_sunshop_order_status",
+    "agent": "no_task_extract",
+    "task_id": "m1c_sunshop_order_status",
+    "instruction": "Check the status of your most recent order on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_task_extract__m1c_sunshop_order_status"
+  },
+  {
+    "run": "no_task_extract__m2_messengerplus",
+    "agent": "no_task_extract",
+    "task_id": "m2_messengerplus",
+    "instruction": "Find Alice in MessengerPlus and check her recent messages.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_task_extract__m2_messengerplus"
+  },
+  {
+    "run": "no_task_extract__m2b_messenger_reply_alice",
+    "agent": "no_task_extract",
+    "task_id": "m2b_messenger_reply_alice",
+    "instruction": "Find the contact named Alice in MessengerPlus and reply \"On my way!\".",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_task_extract__m2b_messenger_reply_alice"
+  },
+  {
+    "run": "no_task_extract__m2c_messenger_search_alice",
+    "agent": "no_task_extract",
+    "task_id": "m2c_messenger_search_alice",
+    "instruction": "Find Jake using the search function in MessengerPlus and open his chat.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_task_extract__m2c_messenger_search_alice"
+  },
+  {
+    "run": "no_task_extract__m3_healthtrack",
+    "agent": "no_task_extract",
+    "task_id": "m3_healthtrack",
+    "instruction": "Open HealthTrack and find the number of steps recorded yesterday.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_task_extract__m3_healthtrack"
+  },
+  {
+    "run": "no_task_extract__m3b_health_sleep",
+    "agent": "no_task_extract",
+    "task_id": "m3b_health_sleep",
+    "instruction": "Open HealthTrack, find the item named Sleep, and check its bedtime and wake time.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_task_extract__m3b_health_sleep"
+  },
+  {
+    "run": "no_task_extract__m3c_health_medication",
+    "agent": "no_task_extract",
+    "task_id": "m3c_health_medication",
+    "instruction": "Open HealthTrack and check Medication for the next reminder.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/no_task_extract__m3c_health_medication"
+  },
+  {
+    "run": "privacy__m1_sunshop",
+    "agent": "privacy",
+    "task_id": "m1_sunshop",
+    "instruction": "Buy a pair of sunglasses on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/privacy__m1_sunshop"
+  },
+  {
+    "run": "privacy__m1b_sunshop_search_backpack",
+    "agent": "privacy",
+    "task_id": "m1b_sunshop_search_backpack",
+    "instruction": "Search for a backpack on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/privacy__m1b_sunshop_search_backpack"
+  },
+  {
+    "run": "privacy__m1c_sunshop_order_status",
+    "agent": "privacy",
+    "task_id": "m1c_sunshop_order_status",
+    "instruction": "Check the status of your most recent order on the SunShop app.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/privacy__m1c_sunshop_order_status"
+  },
+  {
+    "run": "privacy__m2_messengerplus",
+    "agent": "privacy",
+    "task_id": "m2_messengerplus",
+    "instruction": "Find Alice in MessengerPlus and check her recent messages.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/privacy__m2_messengerplus"
+  },
+  {
+    "run": "privacy__m2b_messenger_reply_alice",
+    "agent": "privacy",
+    "task_id": "m2b_messenger_reply_alice",
+    "instruction": "Find the contact named Alice in MessengerPlus and reply \"On my way!\".",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/privacy__m2b_messenger_reply_alice"
+  },
+  {
+    "run": "privacy__m2c_messenger_search_alice",
+    "agent": "privacy",
+    "task_id": "m2c_messenger_search_alice",
+    "instruction": "Find Jake using the search function in MessengerPlus and open his chat.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/privacy__m2c_messenger_search_alice"
+  },
+  {
+    "run": "privacy__m3_healthtrack",
+    "agent": "privacy",
+    "task_id": "m3_healthtrack",
+    "instruction": "Open HealthTrack and find the number of steps recorded yesterday.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/privacy__m3_healthtrack"
+  },
+  {
+    "run": "privacy__m3b_health_sleep",
+    "agent": "privacy",
+    "task_id": "m3b_health_sleep",
+    "instruction": "Open HealthTrack, find the item named Sleep, and check its bedtime and wake time.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/privacy__m3b_health_sleep"
+  },
+  {
+    "run": "privacy__m3c_health_medication",
+    "agent": "privacy",
+    "task_id": "m3c_health_medication",
+    "instruction": "Open HealthTrack and check Medication for the next reminder.",
+    "returncode": 0,
+    "run_dir": "eval_mock_all_updated_260511_1838/privacy__m3c_health_medication"
+  }
+]
