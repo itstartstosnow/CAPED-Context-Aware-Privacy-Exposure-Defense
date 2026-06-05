@@ -1,0 +1,51 @@
+# Task Utility Scores
+
+> **Note**: The 28 seeded privacy tasks use custom instructions and stopping conditions (e.g., stopping at share sheets or inspecting specific items) that are outside AndroidWorld's built-in 116-task evaluators. This file records the authoritative trajectory-level utility scores (`1` = full completion, `0.5` = partial credit, `0` = failure) used in the paper; `eval_summary.json` logs raw runner execution status only.
+
+| Score | Run |
+| --- | --- |
+| 1 | guiowl__gd1_open_target_doc |
+| 1 | guiowl__gd2_search_target_doc |
+| 0.5 | guiowl__gd3_share_target_file |
+| 1 | guiowl__gm1_open_target_sender |
+| 1 | guiowl__gm2_search_target_subject |
+| 1 | guiowl__gm3_read_target_email_detail |
+| 1 | guiowl__gp1_open_target_album_photo |
+| 1 | guiowl__gp2_open_target_receipt_album_photo |
+| 1 | guiowl__gp3_share_target_album_photo |
+| 1 | no_elem_verify__gd1_open_target_doc |
+| 1 | no_elem_verify__gd2_search_target_doc |
+| 0.5 | no_elem_verify__gd3_share_target_file |
+| 1 | no_elem_verify__gm1_open_target_sender |
+| 1 | no_elem_verify__gm2_search_target_subject |
+| 0.5 | no_elem_verify__gm3_read_target_email_detail |
+| 1 | no_elem_verify__gp1_open_target_album_photo |
+| 1 | no_elem_verify__gp2_open_target_receipt_album_photo |
+| 1 | no_elem_verify__gp3_share_target_album_photo |
+| 1 | no_task_extract__gd1_open_target_doc |
+| 0 | no_task_extract__gd2_search_target_doc |
+| 1 | no_task_extract__gd3_share_target_file |
+| 0 | no_task_extract__gm1_open_target_sender |
+| 0 | no_task_extract__gm2_search_target_subject |
+| 0 | no_task_extract__gm3_read_target_email_detail |
+| 1 | no_task_extract__gp1_open_target_album_photo |
+| 1 | no_task_extract__gp2_open_target_receipt_album_photo |
+| 0 | no_task_extract__gp3_share_target_album_photo |
+| 1 | privacy__gd1_open_target_doc |
+| 1 | privacy__gd2_search_target_doc |
+| 0.5 | privacy__gd3_share_target_file |
+| 1 | privacy__gm1_open_target_sender |
+| 1 | privacy__gm2_search_target_subject |
+| 1 | privacy__gm3_read_target_email_detail |
+| 1 | privacy__gp1_open_target_album_photo |
+| 0 | privacy__gp2_open_target_receipt_album_photo |
+| 1 | privacy__gp3_share_target_album_photo |
+| 1 | text_only__gd1_open_target_doc |
+| 1 | text_only__gd2_search_target_doc |
+| 0.5 | text_only__gd3_share_target_file |
+| 1 | text_only__gm1_open_target_sender |
+| 1 | text_only__gm2_search_target_subject |
+| 1 | text_only__gm3_read_target_email_detail |
+| 1 | text_only__gp1_open_target_album_photo |
+| 1 | text_only__gp2_open_target_receipt_album_photo |
+| 1 | text_only__gp3_share_target_album_photo |
