@@ -1,0 +1,6 @@
+method,n_tasks_total,n_runs_total,success_count_total,mean_utility_total,success_conditioned_wslr_total,sps_total
+No Protection,28,28,24,0.8929,0.7664,0.2336
+Text-Only,28,28,24,0.9107,0.7515,0.2485
+CAPED w/o Element Verification,28,28,21,0.7857,0.1237,0.8763
+CAPED w/o Task Extraction,28,28,9,0.3214,0.0278,0.9722
+Full CAPED,28,28,25,0.9286,0.2681,0.7319

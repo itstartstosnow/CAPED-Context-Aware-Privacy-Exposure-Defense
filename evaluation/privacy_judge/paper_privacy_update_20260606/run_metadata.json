@@ -1,0 +1,25 @@
+{
+  "script_path": "evaluation/privacy_judge/build_paper_privacy_tables.py",
+  "classification_input_path": "evaluation/privacy_judge/paper_privacy_task_classification.csv",
+  "output_dir": "evaluation/privacy_judge/paper_privacy_update_20260606",
+  "result_directories": {
+    "mock": "evaluation/results_metadata/eval_mock_all_updated_260511_1838",
+    "awp": "evaluation/results_metadata/eval_awp_all_updated_260512_1744",
+    "extend_other": "evaluation/results_metadata/eval_expandOther_all_20260604_full_expand",
+    "extend_google": "evaluation/results_metadata/eval_expandGoogle_all_20260604_full_expand"
+  },
+  "task_success_record_paths": {
+    "mock": "evaluation/results_metadata/eval_mock_all_updated_260511_1838/TaskSuccessRate.md",
+    "awp": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/TaskSuccessRate.md",
+    "extend_other": "evaluation/results_metadata/eval_expandOther_all_20260604_full_expand/successRate.md",
+    "extend_google": "evaluation/results_metadata/eval_expandGoogle_all_20260604_full_expand/successRate.md"
+  },
+  "privacy_judge_output_paths": {
+    "mock": "evaluation/results_metadata/eval_mock_all_updated_260511_1838/judge_results.json",
+    "awp": "evaluation/results_metadata/eval_awp_all_updated_260512_1744/judge_results.json",
+    "extend_other": "evaluation/results_metadata/eval_expandOther_all_20260604_full_expand/judge_results.json",
+    "extend_google": "evaluation/results_metadata/eval_expandGoogle_all_20260604_full_expand/judge_results.json"
+  },
+  "warnings": [],
+  "unclassified_or_not_in_selected_experiments": []
+}
