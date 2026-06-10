@@ -39,7 +39,7 @@ if __name__ == '__main__':
     compo_classifier = None
     if is_ip and is_clf:
         compo_classifier = {}
-        from cnn.CNN import CNN
+        from cnn.cnn_pytorch import CNN
         # compo_classifier['Image'] = CNN('Image')
         compo_classifier['Elements'] = CNN('Elements')
         # compo_classifier['Noise'] = CNN('Noise')

@@ -38,6 +38,20 @@ def repo_root() -> Path:
     return Path(__file__).resolve().parents[2]
 
 
+def to_repo_rel(p: Path | str, base: Path | None = None) -> str:
+    b = (base or repo_root()).resolve()
+    s = str(p)
+    bs = str(b)
+    if s.startswith(bs + "/"):
+        return s[len(bs) + 1:]
+    if s == bs:
+        return "."
+    try:
+        return str(Path(s).resolve().relative_to(b))
+    except Exception:
+        return s
+
+
 def rel_or_abs(path_text: str, base: Path) -> Path:
     path = Path(path_text)
     if not path.is_absolute():
@@ -52,10 +66,10 @@ def load_json(path: Path) -> Any:
 
 def write_csv(path: Path, rows: list[dict[str, Any]], fieldnames: list[str]) -> None:
     with path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for row in rows:
-            writer.writerow({name: row.get(name, "") for name in fieldnames})
+            writer.writerow({name: (json.dumps(row.get(name), ensure_ascii=False) if isinstance(row.get(name), (list, dict)) else row.get(name, "")) for name in fieldnames})
 
 
 def markdown_table(rows: list[dict[str, Any]], fieldnames: list[str]) -> str:
@@ -236,13 +250,12 @@ def build_rows(classification: dict[str, dict[str, str]], experiments: dict[str,
                 run_sps = (1.0 - float(run_wslr)) if isinstance(run_wslr, (int, float)) else None
 
                 meta = classification[task_id]
-                run_dir = Path(run.get("run_dir") or eval_dir / run_name)
-                if not run_dir.is_absolute():
-                    run_dir = (eval_dir / run_dir).resolve()
-                screenshot_dir = run.get("screenshot_dir") or str(run_dir / "screenshots")
-                raw_result_path = run_dir / "run_summary.json"
-                if not raw_result_path.is_file():
-                    raw_result_path = run_dir / "run.log"
+                suite_folder = eval_dir.name
+                hf_run_rel = f"trajectories/{suite_folder}/{run_name}"
+                raw_result_rel = f"{hf_run_rel}/run.log" if group == "mock" else f"{hf_run_rel}/run_summary.json"
+                raw_scr = str(run.get("screenshot_dir") or "")
+                scr_leaf = Path(raw_scr).name if raw_scr else "screenshots"
+                screenshot_rel = f"{hf_run_rel}/{scr_leaf}"
 
                 task_rows.append({
                     "task_id": task_id,
@@ -255,11 +268,11 @@ def build_rows(classification: dict[str, dict[str, str]], experiments: dict[str,
                     "max_weighted_leakage": fmt_num(max_weighted),
                     "wslr": fmt_num(run_wslr),
                     "sps": fmt_num(run_sps),
-                    "leaked_seeded_items": json.dumps(leaked_items(attacker), ensure_ascii=False),
-                    "raw_result_path": str(raw_result_path),
-                    "task_success_record_path": str(success_path),
-                    "screenshot_or_trajectory_path": str(screenshot_dir),
-                    "judge_output_path": f"{judge_path}#runs[{idx}]",
+                    "leaked_seeded_items": leaked_items(attacker),
+                    "raw_result_path": raw_result_rel,
+                    "task_success_record_path": to_repo_rel(success_path),
+                    "screenshot_or_trajectory_path": screenshot_rel,
+                    "judge_output_path": f"{to_repo_rel(judge_path)}#runs[{idx}]",
                     "_method_id": agent,
                     "_utility_float": float(utility),
                     "_wslr_float": float(run_wslr) if isinstance(run_wslr, (int, float)) else None,
@@ -345,7 +358,7 @@ def residual_summary(task_rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     for row in task_rows:
         if row["method"] != "Full CAPED" or row["success"] != "1":
             continue
-        for item in json.loads(row["leaked_seeded_items"] or "[]"):
+        for item in (json.loads(row["leaked_seeded_items"] or "[]") if isinstance(row["leaked_seeded_items"], str) else (row["leaked_seeded_items"] or [])):
             key = (row["paper_category"], item.get("category") or "", item.get("id") or "")
             entry = counts.setdefault(key, {
                 "paper_category": row["paper_category"],
@@ -375,25 +388,142 @@ def narrative(classification_rows: list[dict[str, str]], aggregate_rows: list[di
         apps_by_cat[row["paper_category"]].add(row["app_name"])
         tasks_by_cat[row["paper_category"]].append(row["task_id"])
 
-    full_overall = next((row for row in overall_rows if row["method"] == "Full CAPED"), None)
-    full_by_cat = [row for row in aggregate_rows if row["method"] == "Full CAPED"]
-    residual_top = residual_rows[:5]
     lines = [
         "# Paper Privacy Evaluation Summary",
         "",
         "## Result Directories",
     ]
     for group, path_text in DEFAULT_EXPERIMENTS.items():
-        lines.append(f"- {group}: `{repo_root() / path_text}`")
+        lines.append(f"- {group}: `{path_text}`")
     lines.extend([
         "",
         "## Category Composition",
     ])
     for cat in CATEGORY_ORDER:
         lines.append(f"- {cat}: apps = {', '.join(sorted(apps_by_cat[cat]))}; tasks = {', '.join(tasks_by_cat[cat])}.")
+    return "\n".join(lines) + "\n"
 
-    lines.extend([
-        "",
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--classification",
+        default="evaluation/privacy_judge/paper_privacy_task_classification.csv",
+        help="Task classification CSV.",
+    )
+    parser.add_argument(
+        "--experiment",
+        action="append",
+        default=[],
+        help="Override or add experiment path as group=path. Groups: mock, awp, extend_other, extend_google.",
+    )
+    parser.add_argument(
+        "--out-dir",
+        default="evaluation/privacy_judge/paper_privacy_update_20260606",
+        help="Output directory for generated CSV/JSON/Markdown files.",
+    )
+    return parser.parse_args()
+
+
+def main() -> int:
+    args = parse_args()
+    base = repo_root()
+    classification_path = rel_or_abs(args.classification, base)
+    out_dir = rel_or_abs(args.out_dir, base)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    classification = load_classification(classification_path)
+    experiments = experiment_paths(args, base)
+    task_rows, warnings, unclassified = build_rows(classification, experiments)
+    classification_rows = list(classification.values())
+    aggregate_rows = aggregate(task_rows)
+    overall_rows = overall(task_rows)
+    residual_rows = residual_summary(task_rows)
+
+    public_task_fields = [
+        "task_id",
+        "app_name",
+        "paper_category",
+        "method",
+        "utility_score",
+        "success",
+        "weighted_leakage",
+        "max_weighted_leakage",
+        "wslr",
+        "sps",
+        "leaked_seeded_items",
+        "raw_result_path",
+        "task_success_record_path",
+        "screenshot_or_trajectory_path",
+        "judge_output_path",
+    ]
+    aggregate_fields = [
+        "paper_category",
+        "method",
+        "n_tasks",
+        "n_runs",
+        "success_count",
+        "mean_utility",
+        "success_conditioned_wslr",
+        "sps",
+        "notes",
+    ]
+    overall_fields = [
+        "method",
+        "n_tasks_total",
+        "n_runs_total",
+        "success_count_total",
+        "mean_utility_total",
+        "success_conditioned_wslr_total",
+        "sps_total",
+    ]
+    residual_fields = ["paper_category", "privacy_surface", "seeded_item_id", "count", "tasks"]
+
+    write_csv(out_dir / "task_classification.csv", classification_rows, list(classification_rows[0].keys()))
+    write_csv(out_dir / "task_level_raw_stats.csv", task_rows, public_task_fields)
+    write_csv(out_dir / "paper_ready_aggregate.csv", aggregate_rows, aggregate_fields)
+    write_csv(out_dir / "overall_summary.csv", overall_rows, overall_fields)
+    write_csv(out_dir / "full_caped_residual_leakage.csv", residual_rows, residual_fields)
+
+    all_tables = {
+        "task_classification": classification_rows,
+        "task_level_raw_stats": [
+            {field: row.get(field, "") for field in public_task_fields}
+            for row in task_rows
+        ],
+        "paper_ready_aggregate": aggregate_rows,
+        "overall_summary": overall_rows,
+        "full_caped_residual_leakage": residual_rows,
+    }
+    (out_dir / "paper_privacy_tables.json").write_text(
+        json.dumps(all_tables, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    metadata = {
+        "script_path": to_repo_rel(Path(__file__).resolve(), base),
+        "classification_input_path": to_repo_rel(classification_path, base),
+        "output_dir": to_repo_rel(out_dir, base),
+        "result_directories": {group: to_repo_rel(path, base) for group, path in experiments.items()},
+        "task_success_record_paths": {
+            group: to_repo_rel(success_file_for(path), base) for group, path in experiments.items()
+        },
+        "path_column_bases": {
+            "task_success_record_path": "relative to this repository root (also mirrored under trajectories/ in the companion Hugging Face dataset)",
+            "judge_output_path": "relative to this repository root (also mirrored under trajectories/ in the companion Hugging Face dataset)",
+            "raw_result_path": "relative to the companion Hugging Face dataset root (trajectories/<suite>/<run>/...)",
+            "screenshot_or_trajectory_path": "relative to the companion Hugging Face dataset root (trajectories/<suite>/<run>/...)"
+        },
+        "privacy_judge_output_paths": {
+            group: to_repo_rel(path / "judge_results.json", base) for group, path in experiments.items()
+        },
+        "warnings": warnings,
+        "unclassified_or_not_in_selected_experiments": unclassified,
+    }
+    (out_dir / "run_metadata.json").write_text(json.dumps(metadata, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    summary_md = [
+        narrative(classification_rows, aggregate_rows, overall_rows, residual_rows),
         "## Paper-Ready Aggregate",
         markdown_table(aggregate_rows, aggregate_fields),
         "",
@@ -407,20 +537,20 @@ def narrative(classification_rows: list[dict[str, str]], aggregate_rows: list[di
         "\n".join(f"- {warning}" for warning in warnings) if warnings else "_No warnings._",
         "",
         "## Generated Files",
-        f"- `{out_dir / 'task_classification.csv'}`",
-        f"- `{out_dir / 'task_level_raw_stats.csv'}`",
-        f"- `{out_dir / 'paper_ready_aggregate.csv'}`",
-        f"- `{out_dir / 'overall_summary.csv'}`",
-        f"- `{out_dir / 'full_caped_residual_leakage.csv'}`",
-        f"- `{out_dir / 'paper_privacy_tables.json'}`",
-        f"- `{out_dir / 'run_metadata.json'}`",
+        f"- `{to_repo_rel(out_dir / 'task_classification.csv', base)}`",
+        f"- `{to_repo_rel(out_dir / 'task_level_raw_stats.csv', base)}`",
+        f"- `{to_repo_rel(out_dir / 'paper_ready_aggregate.csv', base)}`",
+        f"- `{to_repo_rel(out_dir / 'overall_summary.csv', base)}`",
+        f"- `{to_repo_rel(out_dir / 'full_caped_residual_leakage.csv', base)}`",
+        f"- `{to_repo_rel(out_dir / 'paper_privacy_tables.json', base)}`",
+        f"- `{to_repo_rel(out_dir / 'run_metadata.json', base)}`",
     ]
     (out_dir / "summary.md").write_text("\n".join(summary_md) + "\n", encoding="utf-8")
 
     if warnings:
         for warning in warnings:
             print(f"WARNING: {warning}", file=sys.stderr)
-    print(f"Wrote paper privacy tables to {out_dir}")
+    print(f"Wrote paper privacy tables to {to_repo_rel(out_dir, base)}")
     return 0
 
 

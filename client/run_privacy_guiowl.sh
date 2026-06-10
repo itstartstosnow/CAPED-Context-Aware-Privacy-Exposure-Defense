@@ -28,7 +28,7 @@
 #        (on GPU server) python -m vllm.entrypoints.openai.api_server \
 #          --model GUI-Owl-7B --port 8000
 #   3. agentPrivacy server on port 8001:
-#        (on GPU server) python server.py --port 8001
+#        (on GPU server) python -m uvicorn api.main:app --host 0.0.0.0 --port 8001
 #   4. Python venv active: workon android_world
 #      (or use the interpreter directly: python)
 #

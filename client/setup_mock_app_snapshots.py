@@ -95,8 +95,13 @@ def _auto_serial(adb_path: str) -> str:
 
 def _copy_apk_to_cache(app: dict[str, str], refresh: bool = False) -> Path:
     APK_CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    source = Path(app["source_apk"]).expanduser()
     target = APK_CACHE_DIR / app["cached_apk"]
+    raw_source = (app.get("source_apk") or "").strip()
+    if target.is_file() and (not refresh or not raw_source):
+        return target
+    if not raw_source:
+        raise FileNotFoundError(f"Cached APK not found at {target}; place {app['cached_apk']} in {APK_CACHE_DIR}")
+    source = Path(raw_source).expanduser()
     if not source.is_file():
         raise FileNotFoundError(f"Source APK not found: {source}")
 

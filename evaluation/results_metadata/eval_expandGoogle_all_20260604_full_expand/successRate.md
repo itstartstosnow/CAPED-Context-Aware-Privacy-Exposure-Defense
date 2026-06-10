@@ -1,6 +1,6 @@
 # Task Utility Scores
 
-> **Note**: The 28 seeded privacy tasks use custom instructions and stopping conditions (e.g., stopping at share sheets or inspecting specific items) that are outside AndroidWorld's built-in 116-task evaluators. This file records the authoritative trajectory-level utility scores (`1` = full completion, `0.5` = partial credit, `0` = failure) used in the paper; `eval_summary.json` logs raw runner execution status only.
+> **Note**: The 28 seeded privacy tasks use custom instructions and stopping conditions (e.g., stopping at share sheets or inspecting specific items) that are outside AndroidWorld's built-in 116-task evaluators. Because `eval_summary.json` records the built-in AndroidWorld evaluator's automated verdict—which cannot score these custom instructions or stopping conditions—this file records the authoritative trajectory-level utility scores (`1` = full completion, `0.5` = partial credit, `0` = failure) used in the paper.
 
 | Score | Run |
 | --- | --- |

@@ -76,7 +76,7 @@ if __name__ == '__main__':
         classifier = None
         if is_clf:
             classifier = {}
-            from cnn.CNN import CNN
+            from cnn.cnn_pytorch import CNN
             # classifier['Image'] = CNN('Image')
             classifier['Elements'] = CNN('Elements')
             # classifier['Noise'] = CNN('Noise')

@@ -1,4 +1,4 @@
-# CAPED: Context-Aware Pre-Upload Exposure Control for Mobile GUI Agents
+# CAPED: Context-Aware Privacy Exposure Defense for Mobile GUI Agents
 
 Official code and evaluation artifact repository for **CAPED** (*Context-Aware Privacy Exposure Defense*), a pre-upload exposure control layer for screenshot-based mobile GUI agents.
 
@@ -45,7 +45,7 @@ CAPED/
     └── results_metadata/          # Per-run judge outputs, manual utility records, and AndroidWorld timing logs
 ```
 
-> **Dataset & Full Trajectories**: Complete screenshot trajectories (28 tasks × 5 methods = 140 runs, 1,223 screenshots), mock app APKs (`SunShop`, `MessengerPlus`, `HealthTrack`), and synthetic seed media assets are hosted in the companion Hugging Face Dataset.
+> **Dataset & Full Trajectories**: Complete screenshot trajectories (28 tasks × 5 methods = 140 runs, 1,223 screenshots), mock app APKs (`SunShop`, `MessengerPlus`, `HealthTrack`), and synthetic seed media assets are hosted in the companion Hugging Face Dataset: [**`startstosnow/CAPED-Context-Aware-Privacy-Exposure-Defense-Benchmark`**](https://huggingface.co/datasets/startstosnow/CAPED-Context-Aware-Privacy-Exposure-Defense-Benchmark).
 
 ---
 
