@@ -12,7 +12,7 @@ All privacy policy resolution, context classification, and image redaction decis
 
 ## Required Open-Source Models
 
-We do not redistribute third-party model weights in this repository. By default, the server loads models from `$CAPED_MODEL_DIR` (defaults to `./models/`) and automatically falls back to downloading from the official Hugging Face Hub IDs listed below:
+The LLM/VLM weights (Qwen, EmbeddingGemma, GLiNER, PaddleOCR) are not redistributed in this repository: by default the server loads them from `$CAPED_MODEL_DIR` (defaults to `./models/`) and falls back to downloading from the official Hugging Face Hub IDs listed below. The converted UIED element classifier (`cnn_elements.onnx`, Apache-2.0) is included in-tree under `server/UIED/cnn/` so the detection pipeline works without a separate download.
 
 | Component | Model Name / Hugging Face ID | Expected Local Path (`$CAPED_MODEL_DIR/...`) | Purpose |
 |---|---|---|---|
@@ -21,7 +21,7 @@ We do not redistribute third-party model weights in this repository. By default,
 | **Semantic Relevance Embedding** | [`google/embeddinggemma-300m`](https://huggingface.co/google/embeddinggemma-300m) | `./models/embeddinggemma-300m` | 768-d multilingual embeddings for element-to-subject cosine similarity |
 | **NER De-identification** | [`urchade/gliner_multi-v2.1`](https://huggingface.co/urchade/gliner_multi-v2.1) | Auto-cached by `gliner` / Hugging Face | Multilingual PII entity detection & placeholder mapping |
 | **OCR Engine** | [PaddleOCR (PP-OCRv3)](https://github.com/PaddlePaddle/PaddleOCR) | Auto-downloaded by `paddleocr` | Screen text detection and recognition |
-| **UI Component Classifier** | [UIED CNN (ONNX)](https://github.com/MulongXie/UIED) | `./UIED/cnn/cnn_elements.onnx` | Graphic-element classifier for UIED regions. We do not redistribute the converted ONNX weights; convert UIED's `cnn-rico-1.h5` checkpoint with `onnx2torch` and place it at this path. Server startup fails fast if the file is missing. |
+| **UI Component Classifier** | [UIED CNN (ONNX)](https://github.com/MulongXie/UIED) | `./UIED/cnn/cnn_elements.onnx` | Graphic-element classifier for UIED regions. Converted from UIED's `cnn-rico-1.h5` (Apache-2.0) and included in this repository; `onnx2torch` loads it at startup. |
 
 > **Remote GUI Agent Model**: The base GUI agent [`mPLUG/GUI-Owl-7B`](https://huggingface.co/mPLUG/GUI-Owl-7B) runs as a separate OpenAI-compatible vLLM server (see root `README.md`).
 
