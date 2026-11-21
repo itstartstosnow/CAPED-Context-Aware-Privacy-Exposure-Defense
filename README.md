@@ -118,4 +118,4 @@ python evaluation/privacy_judge/build_paper_privacy_tables.py
 
 ## License
 
-This project is released for academic research use. Top-level code follows the MIT License ([LICENSE](LICENSE)); the adapted AndroidWorld client harness under `client/` retains its upstream Apache-2.0 License ([client/LICENSE](client/LICENSE)); the bundled UIED component under `server/UIED/` retains its upstream Apache-2.0 license ([server/UIED/LICENSE](server/UIED/LICENSE)).
+This project is released for academic research use. Top-level code follows the MIT License ([LICENSE](LICENSE)); the adapted AndroidWorld client harness under `client/` retains its upstream Apache-2.0 License ([client/LICENSE](client/LICENSE)); the bundled UIED component under `server/UIED/` retains its upstream Apache-2.0 license ([server/UIED/LICENSE](server/UIED/LICENSE)); `client/LICENSE` also carries the upstream MIT notice for the bundled MiniWoB HTML assets.
