@@ -9,7 +9,6 @@ build-backend = "setuptools.build_meta"
 name = "android_world"
 version = "0.1.0"
 description = "Android World Environment Project"
-readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "absl-py==2.1.0",

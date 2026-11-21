@@ -27,6 +27,7 @@ from typing import Optional
 from api.schemas import (
     HealthResponse, NerProcessResponse,
     DetectResponse, VqaResponse, LlmRequest, LlmResponse,
+    EmbedRequest, EmbedResponse,
 )
 from api.dependencies import get_controller
 

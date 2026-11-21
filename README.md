@@ -42,7 +42,7 @@ CAPED/
     │   ├── build_paper_privacy_tables.py    # Deterministic WSLR / SPS / Utility table generator
     │   ├── paper_privacy_update_20260606/   # Aggregated paper-ready CSV/JSON/Markdown tables
     │   └── judge_stability_spotcheck_20260610/ # 3-repeat judge stability spot-check artifacts
-    └── results_metadata/          # Per-run judge outputs, manual utility records, and AndroidWorld timing logs
+    └── results_metadata/          # Per-run judge outputs, manual utility records, and AndroidWorld timing tables (raw logs omitted)
 ```
 
 > **Dataset & Full Trajectories**: Complete screenshot trajectories (28 tasks × 5 methods = 140 runs, 1,223 screenshots), mock app APKs (`SunShop`, `MessengerPlus`, `HealthTrack`), and synthetic seed media assets are hosted in the companion Hugging Face Dataset: [**`startstosnow/CAPED-Context-Aware-Privacy-Exposure-Defense-Benchmark`**](https://huggingface.co/datasets/startstosnow/CAPED-Context-Aware-Privacy-Exposure-Defense-Benchmark).
@@ -118,4 +118,4 @@ python evaluation/privacy_judge/build_paper_privacy_tables.py
 
 ## License
 
-This project is released for academic research use. Top-level code follows the MIT License ([LICENSE](LICENSE)); the adapted AndroidWorld client harness under `client/` retains its upstream Apache-2.0 License ([client/LICENSE](client/LICENSE)).
+This project is released for academic research use. Top-level code follows the MIT License ([LICENSE](LICENSE)); the adapted AndroidWorld client harness under `client/` retains its upstream Apache-2.0 License ([client/LICENSE](client/LICENSE)); the bundled UIED component under `server/UIED/` retains its upstream Apache-2.0 license ([server/UIED/LICENSE](server/UIED/LICENSE)).

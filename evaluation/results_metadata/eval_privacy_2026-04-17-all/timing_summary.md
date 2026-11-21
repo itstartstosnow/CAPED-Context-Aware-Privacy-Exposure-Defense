@@ -19,3 +19,5 @@ Weighted per-step averages over 1,394 measured steps across the AndroidWorld eva
 | **Total Step Time (`t_step_total_s`)** | **10.835** | End-to-end measured step wall time (remaining 0.540s is inter-hook harness/IPC bookkeeping) |
 
 One-time task requirement extraction (`task_extract_cached_app_list_timing/summary.md`): mean `5.716s` (median `5.634s`) across 115 tasks.
+
+**Provenance note.** The `log` and `run_dir` columns in `timing_per_task.csv` and `timing_per_segment.csv` are pointers to the original 116-task run logs, which are not included in this release (same as the raw screenshot trajectories). All timing values above are self-contained in `timing_per_task.csv` and do not require those logs to reproduce.
